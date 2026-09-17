@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#FDF3DC">
 <title>Gayatri Green Energy — Rooftop Solar in Hyderabad, Telangana & AP</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23FDF3DC'/><circle cx='16' cy='16' r='8' fill='%23F0A93C'/></svg>">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/logo.png">
 <script>
 /* Set theme BEFORE first paint — no flash */
 (function(){try{
@@ -123,8 +124,8 @@ section{position:relative}
 #nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:transform .45s var(--ease)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:16px clamp(16px,4vw,28px);display:flex;align-items:center;justify-content:space-between;gap:12px;transition:all .45s var(--ease)}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:999px;padding:7px 16px 7px 8px;box-shadow:var(--gshadow),var(--glow);transition:all .45s var(--ease)}
-.brand-mark{width:36px;height:36px;flex:none}
-.brand-mark [stroke]{stroke:var(--logo-ink)}
+.brand-mark{width:36px;height:36px;flex:none;display:block;overflow:hidden;position:relative}
+.brand-mark img{position:absolute;left:0;top:0;width:500%;height:100%;max-width:none;object-fit:contain;object-position:left center;display:block}
 .brand-name{font-family:var(--serif);font-weight:600;font-size:1.12rem;line-height:1.05;white-space:nowrap}
 .brand-name small{display:block;font-family:var(--sans);font-weight:600;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2)}
 .nav-links{display:flex;align-items:center;gap:2px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:999px;padding:5px;box-shadow:var(--gshadow),var(--glow)}
@@ -144,6 +145,8 @@ html[data-theme="dark"] .theme-btn .tsun{display:none}
 #nav.float .nav-inner{padding-top:10px;padding-bottom:10px}
 #nav.float .brand{padding:5px 13px 5px 6px}
 #nav.float .brand-mark{width:30px;height:30px}
+#nav.float .brand-mark img{width:500%;height:100%}
+#nav.float .brand-mark img{width:30px;height:30px}
 #nav.float .brand-name{font-size:1rem}
 .nav-progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--amber);transition:width .15s linear;box-shadow:0 0 10px rgba(240,169,60,.8)}
 .burger{display:none;width:46px;height:46px;border:1px solid var(--gborder);border-radius:50%;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);align-items:center;justify-content:center;flex:none;box-shadow:var(--gshadow),var(--glow)}
@@ -205,8 +208,9 @@ html[data-theme="dark"] .btn.ghost{background:var(--fillcell)}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:22px;overflow:hidden;box-shadow:var(--gshadow),var(--glow)}
 .stat{padding:clamp(20px,3vw,34px);border-right:1px solid var(--gborder)}
 .stat:last-child{border-right:0}
-.stat b{font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,3rem);font-weight:600;display:block;line-height:1;margin-bottom:8px}
-.stat b sup{font-size:.45em;color:var(--amber2)}
+.stat b{font-family:var(--serif);font-size:clamp(2rem,4vw,4.5rem);font-weight:600;display:block;line-height:1;margin-bottom:8px}
+.stat b span{font-size:1em}
+.stat b sup{font-size:.35em;color:var(--amber2)}
 .stat span{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
 
 /* section heads */
@@ -465,8 +469,10 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
 }
 @media (max-width:380px){
   .nav-cta{display:none}
+  .brand{gap:7px;padding:5px 9px 5px 5px}
   .brand-mark{width:28px;height:28px}
   .brand-name{font-size:.85rem}
+  .brand-name small{font-size:.48rem}
   #nav.float .brand-mark{width:26px;height:26px}
 }
 </style>
@@ -482,9 +488,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
 <header id="nav">
   <div class="nav-inner">
     <a class="brand" href="#top">
-      <svg class="brand-mark" viewBox="0 40 400 400" fill="none" aria-hidden="true" xmlns="http://w3.org">
-        <image href="https://uploads.onecompiler.io/42pw6r2yk/1789029016259/963090b9615176ef8ac2333042c564aa-removebg-preview.png" x="0" y="0" width="500" height="400" />
-      </svg>
+      <span class="brand-mark"><img src="assets/logo.png" alt="Gayatri Green Energy logo"></span>
       <span class="brand-name">Gayatri <em style="color:var(--green);font-style:italic">Green</em> Energy<small>Solar · Hyderabad</small></span>
     </a>
     <nav class="nav-links" id="deskLinks">
@@ -497,7 +501,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
         <span class="tmoon"><i data-i="moon"></i></span>
         <span class="tlabel">Dark</span>
       </button>
-      <a class="nav-cta" href="tel:+919912058832"><i data-i="phone"></i><span>99120 58832</span></a>
+      <a class="nav-cta" href="tel:+919962794336"><i data-i="phone"></i><span>99627 94336</span></a>
       <button class="burger" id="burger" aria-label="Open menu"><i data-i="menu"></i></button>
     </div>
     <div class="nav-progress" id="navProg"></div>
@@ -526,8 +530,8 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
     <a href="#contact" style="transition-delay:.35s"><span>07</span>Contact</a>
   </nav>
   <div class="mfoot">
-    <a class="btn" href="tel:+919912058832"><i data-i="phone"></i>Call 99120 58832</a>
-    <a class="btn ghost" href="https://wa.me/919912058832" target="_blank" rel="noopener"><i data-i="message-circle"></i>WhatsApp</a>
+    <a class="btn" href="tel:+919962794336"><i data-i="phone"></i>Call 99627 94336</a>
+    <a class="btn ghost" href="https://wa.me/919962794336" target="_blank" rel="noopener"><i data-i="message-circle"></i>WhatsApp</a>
   </div>
 </div>
 
@@ -543,7 +547,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
         <span class="chip"><i data-i="map-pin"></i>Free site visit in 48 hours</span>
       </div>
       <div class="hero-ctas rv in" style="transition-delay:.28s">
-        <a class="btn" href="tel:+919912058832"><i data-i="phone"></i>Call 99120 58832</a>
+        <a class="btn" href="tel:+919962794336"><i data-i="phone"></i>Call 99627 94336</a>
         <a class="btn ghost" href="#contact">Get a free quote<i data-i="arrow-right"></i></a>
       </div>
     </div>
@@ -577,10 +581,10 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
 <div class="stats">
   <div class="wrap">
     <div class="stats-grid rv">
-      <div class="stat"><b class="num"><span data-count="450">0</span><sup>+</sup></b><span>Homes & shops powered</span></div>
-      <div class="stat"><b class="num"><span data-count="3.2" data-dec="1">0</span><sup>MW</sup></b><span>Solar capacity installed</span></div>
-      <div class="stat"><b class="num"><span data-count="8">0</span><sup>yrs</sup></b><span>Serving two states</span></div>
-      <div class="stat"><b class="num"><span data-count="30">0</span><sup>+</sup></b><span>Districts covered</span></div>
+      <div class="stat"><b class="num"><span data-count="110">0</span><sup>+</sup></b><span>Homes & shops powered</span></div>
+      <div class="stat"><b class="num"><span data-count="412" data-dec="1">0</span><sup>KW</sup></b><span>Solar capacity installed</span></div>
+      <div class="stat"><b class="num"><span data-count="2">0</span><sup>yrs</sup></b><span>Serving two states</span></div>
+      <div class="stat"><b class="num"><span data-count="2">0</span><sup>+</sup></b><span>States covered</span></div>
     </div>
   </div>
 </div>
@@ -597,8 +601,8 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
     </div>
     <div class="rv" style="transition-delay:.12s">
       <div class="about-facts">
-        <div class="fact"><span>Office</span><b>Shop No. 303, Comfort Homes 1, Kaithalapur, Hyderabad — 500018</b></div>
-        <div class="fact"><span>Phone / WhatsApp</span><b><a href="tel:+919912058832" style="text-decoration:none">+91 99120 58832</a></b></div>
+        <div class="fact"><span>Office</span><b>Plot No. 12--8-82/7/18, Rama Jayam , Kaithalapur, Hyderabad — 500018</b></div>
+        <div class="fact"><span>Phone / WhatsApp</span><b><a href="tel:+919962794336" style="text-decoration:none">+91 99627 94336</a></b></div>
         <div class="fact"><span>Service area</span><b>Telangana & Andhra Pradesh</b></div>
         <div class="fact"><span>Subsidy help</span><b>PM Surya Ghar — we file it for you</b></div>
         <div class="fact"><span>Work timing</span><b>Mon – Sat, 9:30 AM – 7:30 PM</b></div>
@@ -644,7 +648,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <span>Install: <b>2–3 days</b></span>
               <span>Payback: <b>3–5 yrs</b></span>
             </div>
-            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi%20Gayatri%20Green%20Energy!%20I%20want%20a%20quote%20for%20home%20rooftop%20solar." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about home solar</a>
+            <a class="svc-wa" href="https://wa.me/919962794336?text=Hi%20Gayatri%20Green%20Energy!%20I%20want%20a%20quote%20for%20home%20rooftop%20solar." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about home solar</a>
           </div>
         </div></div></div>
       </article>
@@ -672,7 +676,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <span>Install: <b>4–7 days</b></span>
               <span>Payback: <b>2.5–4 yrs</b></span>
             </div>
-            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20want%20solar%20for%20my%20shop%2Fclinic%2Foffice." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about commercial solar</a>
+            <a class="svc-wa" href="https://wa.me/919962794336?text=Hi!%20I%20want%20solar%20for%20my%20shop%2Fclinic%2Foffice." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about commercial solar</a>
           </div>
         </div></div></div>
       </article>
@@ -699,7 +703,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <span>Install: <b>1–3 weeks</b></span>
               <span>Bills cut: <b>40–70%</b></span>
             </div>
-            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20Our%20apartment%20society%20wants%20solar%20for%20common%20areas." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about society solar</a>
+            <a class="svc-wa" href="https://wa.me/919962794336?text=Hi!%20Our%20apartment%20society%20wants%20solar%20for%20common%20areas." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about society solar</a>
           </div>
         </div></div></div>
       </article>
@@ -726,7 +730,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <span>Install: <b>2–4 days</b></span>
               <span>Diesel saved: <b>100%</b></span>
             </div>
-            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20need%20a%20solar%20pump%20for%20my%20farm." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about solar pumps</a>
+            <a class="svc-wa" href="https://wa.me/919962794336?text=Hi!%20I%20need%20a%20solar%20pump%20for%20my%20farm." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about solar pumps</a>
           </div>
         </div></div></div>
       </article>
@@ -753,7 +757,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <span>Install: <b>2–3 days</b></span>
               <span>Backup: <b>4–12 hrs</b></span>
             </div>
-            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20want%20solar%20with%20battery%20backup%20(hybrid)." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about hybrid systems</a>
+            <a class="svc-wa" href="https://wa.me/919962794336?text=Hi!%20I%20want%20solar%20with%20battery%20backup%20(hybrid)." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about hybrid systems</a>
           </div>
         </div></div></div>
       </article>
@@ -779,7 +783,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <span>Visits: <b>2–4 per year</b></span>
               <span>Response: <b>within 48 hrs</b></span>
             </div>
-            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20want%20an%20AMC%2Fservice%20plan%20for%20my%20existing%20solar%20system." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about AMC plans</a>
+            <a class="svc-wa" href="https://wa.me/919962794336?text=Hi!%20I%20want%20an%20AMC%2Fservice%20plan%20for%20my%20existing%20solar%20system." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about AMC plans</a>
           </div>
         </div></div></div>
       </article>
@@ -935,21 +939,20 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
         </button>
         <div class="acc-panel"><div><div class="acc-body">
           <div>
-            <p class="bdesc">India's largest solar panel maker and a favourite across Telangana & AP. Strong local service network, excellent heat tolerance, and DCR (domestic content) models available so your PM Surya Ghar subsidy is fully safe.</p>
+            <p class="bdesc">India's largest solar panel maker and a  ourite across Telangana & AP. Strong local service network, excellent heat tolerance, and DCR (domestic content) models available so your PM Surya Ghar subsidy is fully safe.</p>
             <div class="tbl-wrap"><table class="btable">
               <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
               <tr><td>Waaree Aditya WSD-545</td><td class="num">545 Wp</td><td>Mono PERC Half-Cut</td><td>12 yr / 30 yr</td></tr>
               <tr><td>Waaree Aditya 530 DCR</td><td class="num">530 Wp</td><td>DCR — subsidy eligible</td><td>12 yr / 30 yr</td></tr>
               <tr><td>Waaree 550 Bifacial</td><td class="num">550 Wp</td><td>Mono PERC Bifacial</td><td>12 yr / 30 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹22 – 24 / watt</b></div>
             <button class="pdf-btn" data-brand="waaree"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF file with the full table above + our pairing advice — works offline, free to share.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Microtek inverters for homes, or Growatt for net-metering setups — our most-installed home combination.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Hyderabad, Warangal, Vijayawada, Kurnool</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Waaree%20panels%20for%20my%20rooftop." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Waaree price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Waaree%20panels%20for%20my%20rooftop." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Waaree price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -969,14 +972,13 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <tr><td>Adani Apex Bifacial 575</td><td class="num">575 Wp</td><td>Bifacial Dual Glass</td><td>12 yr / 30 yr</td></tr>
               <tr><td>Adani ELITE 620</td><td class="num">620 Wp</td><td>Large-format Mono PERC</td><td>12 yr / 30 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹23 – 25 / watt</b></div>
             <button class="pdf-btn" data-brand="adani"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Solis or Growatt inverters for 5–10 kW homes, shops and clinics.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Hyderabad (commercial), Vijayawada, Anantapur</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Adani%20Solar%20panels." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Adani price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Adani%20Solar%20panels." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Adani price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -996,14 +998,13 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <tr><td>Emmvee 540 DCR</td><td class="num">540 Wp</td><td>DCR — subsidy eligible</td><td>12 yr / 30 yr</td></tr>
               <tr><td>Emmvee N-Type TOPCon 550</td><td class="num">550 Wp</td><td>N-Type TOPCon</td><td>12 yr / 30 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹21 – 23 / watt</b></div>
             <button class="pdf-btn" data-brand="emmvee"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Luminous or Microtek inverters — reliable and easy on the pocket.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Hyderabad suburbs, Nizamabad, Guntur</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Emmvee%20panels." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Emmvee price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Emmvee%20panels." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Emmvee price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -1024,14 +1025,13 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <tr><td>Microtek Solar PCU 1035/2035</td><td class="num">1–2 kVA</td><td>Off-grid with battery</td><td>2 yr</td></tr>
               <tr><td>Microtek Hybrid PCU</td><td class="num">5 kVA</td><td>Grid + battery hybrid</td><td>2 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹28,000 – 35,000 / kW</b></div>
             <button class="pdf-btn" data-brand="microtek"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Waaree or Emmvee panels — the classic Telangana combo. We stock spares locally for fast service.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Hyderabad, Karimnagar, Nalgonda, Khammam</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Microtek%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Microtek price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Microtek%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Microtek price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -1051,14 +1051,13 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <tr><td>Luminous NXG 1400</td><td class="num">~1.1 kVA</td><td>Solar PCU, battery</td><td>2 yr</td></tr>
               <tr><td>Luminous NXG Plus 1850</td><td class="num">~1.5 kVA</td><td>Solar PCU, battery</td><td>2 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹26,000 – 34,000 / kW</b></div>
             <button class="pdf-btn" data-brand="luminous"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Any 545 Wp panel we install. Best for homes wanting backup first, bill savings second.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Secunderabad, Warangal, Tirupati, Eluru</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Luminous%20solar%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Luminous price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Luminous%20solar%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Luminous price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -1078,14 +1077,13 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <tr><td>Growatt MIN TL-X</td><td class="num">3–6 kW</td><td>On-grid, dual MPPT</td><td>Up to 10 yr</td></tr>
               <tr><td>Growatt MOD/MAX 3P</td><td class="num">10 kW+</td><td>3-phase commercial</td><td>Up to 10 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹30,000 – 38,000 / kW</b></div>
             <button class="pdf-btn" data-brand="growatt"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Our preferred match with Adani and Waaree panels for 3–10 kW net-metering systems.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Hyderabad (villas & shops), Vijayawada, Nellore</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Growatt%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Growatt price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Growatt%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Growatt price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -1105,14 +1103,13 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
               <tr><td>Solis 3P</td><td class="num">5–20 kW</td><td>Three-phase on-grid</td><td>10 yr</td></tr>
               <tr><td>Solis S6 Hybrid</td><td class="num">3–6 kW</td><td>Hybrid with battery</td><td>10 yr</td></tr>
             </table></div>
-            <div class="price-band"><span>Indicative market band</span><b>₹29,000 – 36,000 / kW</b></div>
             <button class="pdf-btn" data-brand="solis"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
             <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
           </div>
           <div>
             <div class="pair-line"><b>Pairs with:</b> Our go-to for 5–25 kW three-phase jobs — apartments and commercial roofs in AP & TG.</div>
             <div class="pair-line greenline"><b>Popular in:</b> Hyderabad apartments, Guntur, Rajahmundry</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Solis%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Solis price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20the%20latest%20price%20of%20Solis%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Solis price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -1139,7 +1136,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
           <div>
             <div class="pair-line"><b>Pairs with:</b> Tell us the brand — we'll pair it with the right inverter and confirm ALMM listing for subsidy.</div>
             <div class="pair-line greenline"><b>Available in:</b> All served districts of Telangana & AP</div>
-            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20a%20quote%20for%20Tata%2FVikram%2FSungrow%20products." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask price on WhatsApp</a>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919962794336?text=Hi!%20I%20want%20a%20quote%20for%20Tata%2FVikram%2FSungrow%20products." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask price on WhatsApp</a>
           </div>
         </div></div></div>
       </div>
@@ -1166,33 +1163,33 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
           <span><i data-i="image"></i>One passport photo</span>
         </div>
       </div>
-      <a class="call-mini" href="tel:+919912058832"><i data-i="phone-call"></i>Start Step 1 now: 99120 58832</a>
+      <a class="call-mini" href="tel:+919962794336"><i data-i="phone-call"></i>Start Step 1 now: 99627 94336</a>
     </div>
 
     <div class="tl" id="timeline">
       <div class="tl-fill" id="tlFill"></div>
       <div class="tl-step rv"><div class="tl-node num">1</div>
-        <h3>Free site visit & discussion <small>Day 1</small></h3>
+        <h3>Free site visit & discussion</h3>
         <p>Call or WhatsApp us. Our engineer visits your home, checks roof size, direction of sunlight and your electricity usage pattern — and answers every question in simple language. Completely free, no obligation.</p>
       </div>
       <div class="tl-step rv"><div class="tl-node num">2</div>
-        <h3>Documents & DISCOM approval <small>Week 1–2</small></h3>
+        <h3>Documents & DISCOM approval <h3>
         <p>Step 2 begins with receiving your documents — Aadhaar, latest electricity bill, property tax receipt, bank passbook and one photo. We then apply to your DISCOM (TSSPDCL / TGNPDCL / APSPDCL) for net metering and file the PM Surya Ghar subsidy application on your behalf. You don't visit any office.</p>
       </div>
       <div class="tl-step rv"><div class="tl-node num">3</div>
-        <h3>Design & written quotation <small>Week 2</small></h3>
+        <h3>Design & written quotation </h3>
         <p>We prepare your system design — panel count, roof layout, inverter brand, cable routes — and give a written quote with brands, warranties and prices clearly listed. No hidden charges. You approve before anything is ordered.</p>
       </div>
       <div class="tl-step rv"><div class="tl-node num">4</div>
-        <h3>Installation <small>2 – 3 days</small></h3>
+        <h3>Installation </h3>
         <p>Our team installs the elevated structure, panels, inverter and safe earthing & wiring. Most homes finish in 2–3 days with zero damage to your roof or rooms. Old wiring is checked and corrected where needed.</p>
       </div>
       <div class="tl-step rv"><div class="tl-node num">5</div>
-        <h3>Testing & net meter <small>Week 3–4</small></h3>
+        <h3>Testing & net meter </h3>
         <p>We test the full system, DISCOM officials inspect and install your new bidirectional net meter, and your solar officially goes live. We sit with you and set up the mobile monitoring app, showing exactly how much power you're making.</p>
       </div>
       <div class="tl-step rv"><div class="tl-node num">6</div>
-        <h3>Maintenance & lifetime support <small>25 years</small></h3>
+        <h3>Maintenance & lifetime support </h3>
         <p>Solar needs very little care — mainly keeping panels clean. We teach you how, offer optional yearly AMC visits, monitor inverter health, and handle all warranty claims with the brands. One call, 25 years, we stay responsible.</p>
       </div>
     </div>
@@ -1216,7 +1213,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
         <div class="cov-list">Vijayawada <i>·</i> Guntur <i>·</i> Kurnool <i>·</i> Anantapur <i>·</i> Tirupati <i>·</i> Nellore <i>·</i> Eluru <i>·</i> Ongole <i>·</i> Rajahmundry <i>·</i> Kadapa</div>
       </div>
     </div>
-    <p class="cov-foot rv"><i data-i="map-pin"></i> Don't see your town? If the sun reaches you, we do too. <a href="tel:+919912058832">Call and ask →</a></p>
+    <p class="cov-foot rv"><i data-i="map-pin"></i> Don't see your town? If the sun reaches you, we do too. <a href="tel:+919962794336">Call and ask →</a></p>
   </div>
 </section>
 
@@ -1236,7 +1233,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
       <div class="calc-grid num" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gborder);border:1px solid var(--gborder);border-radius:16px;overflow:hidden;margin-top:24px">
         <div style="background:var(--fillcell);padding:20px"><b id="rSize" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;color:var(--green);display:block">3 kW</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Recommended system</span></div>
         <div style="background:var(--fillcell);padding:20px"><b id="rSave" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">₹2,700</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Saved every month</span></div>
-        <div style="background:var(--fillcell);padding:20px"><b id="rCost" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">₹1.0 L</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Cost after subsidy</span></div>
+        <div style="background:var(--fillcell);padding:20px"><b id="rCost" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">₹1.3 L</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Cost after subsidy</span></div>
         <div style="background:var(--fillcell);padding:20px"><b id="rPay" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">3.1 yrs</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Payback period</span></div>
       </div>
       <p class="num" id="rExtra" style="margin-top:16px;font-size:.88rem;color:var(--ink2)"></p>
@@ -1254,7 +1251,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
     <div class="rv">
       <div class="kicker"><b>(08) — Common questions</b><i></i></div>
       <h2>Asked by every family. <em>Answered simply.</em></h2>
-      <p class="sec-lead">If your question isn't here, just call <b><a href="tel:+919912058832" style="text-decoration:none">99120 58832</a></b> — we'd rather talk for ten minutes than have you guess.</p>
+      <p class="sec-lead">If your question isn't here, just call <b><a href="tel:+919962794336" style="text-decoration:none">99627 94336</a></b> — we'd rather talk for ten minutes than have you guess.</p>
     </div>
     <div class="rv" style="transition-delay:.1s">
 
@@ -1397,8 +1394,8 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
 
       <div class="rv" style="transition-delay:.1s">
         <div class="cinfo-card">
-          <div class="cinfo-row"><span class="ic"><i data-i="map-pin"></i></span><div><b>Visit our office</b>Shop No. 303, Comfort Homes 1,<br>Kaithalapur, Hyderabad — 500018</div></div>
-          <div class="cinfo-row"><span class="ic"><i data-i="phone"></i></span><div><b>Call / WhatsApp</b><a href="tel:+919912058832">+91 99120 58832</a></div></div>
+          <div class="cinfo-row"><span class="ic"><i data-i="map-pin"></i></span><div><b>Visit our office</b>Plot No. 12--8-82/7/18, Rama Jayam,<br>Kaithalapur, Hyderabad — 500018</div></div>
+          <div class="cinfo-row"><span class="ic"><i data-i="phone"></i></span><div><b>Call / WhatsApp</b><a href="tel:+919962794336">+91 99627 94336</a></div></div>
           <div class="cinfo-row"><span class="ic"><i data-i="clock"></i></span><div><b>Working hours</b>Monday – Saturday · 9:30 AM – 7:30 PM</div></div>
         </div>
         <div class="map-frame">
@@ -1433,8 +1430,9 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
       </div>
       <div>
         <h5>Reach us</h5>
-        <a class="foot-tel" href="tel:+919912058832">99120 58832</a>
-        <p style="font-size:.85rem;color:var(--ink2);margin-top:10px">Shop No. 303, Comfort Homes 1,<br>Kaithalapur, Hyderabad — 500018</p>
+        <a class="foot-tel" href="tel:+919962794336">99627 94336</a>
+        <p style="font-size:.85rem;color:var(--ink2);margin-top:10px">Plot No. 12--8-82/7/18, Rama Jayam,<br>Kaithalapur, Hyderabad — 500018</p>
+        <p style="font-size:.85rem;color:var(--ink2);margin-top:10px">Email: sales@gayatrigreenenergy.in</p>
       </div>
     </div>
     <div class="foot-bottom">
@@ -1444,7 +1442,7 @@ footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;b
   </div>
 </footer>
 
-<a class="fab" href="tel:+919912058832" aria-label="Call Gayatri Green Energy"><i data-i="phone"></i></a>
+<a class="fab" href="tel:+919962794336" aria-label="Call Gayatri Green Energy"><i data-i="phone"></i></a>
 <div id="toasts"></div>
 
 <script>
@@ -1684,12 +1682,11 @@ function makePDF(key){
 
     fill(0,0,W,92,GREEN); circle(56,46,17,AMBER);
     txt('GAYATRI GREEN ENERGY',88,36,16,true,WHITE);
-    txt('Rooftop Solar  |  Hyderabad, Telangana & Andhra Pradesh  |  +91 99120 58832',88,56,9,false,[0.92,0.95,0.92]);
-    txt('Shop No. 303, Comfort Homes 1, Kaithalapur, Hyderabad - 500018',88,70,8,false,[0.84,0.89,0.85]);
+    txt('Rooftop Solar  |  Hyderabad, Telangana & Andhra Pradesh  |  +91 99627 94336',88,56,9,false,[0.92,0.95,0.92]);
+    txt('Plot No. 12--8-82/7/18, Rama Jayam, Kaithalapur, Hyderabad - 500018',88,70,8,false,[0.84,0.89,0.85]);
 
     txt(b.name+' - Product & Spec Sheet',40,124,19,true,INK);
     txt('Category: '+b.cat+'   |   Origin: '+b.origin,40,148,9.5,false,GREY);
-    txt('Indicative price band: '+b.price,40,163,9.5,false,GREY);
 
     var y=190;
     txt('About the brand',40,y,11,true,GREEN); y+=16;
@@ -1717,13 +1714,13 @@ function makePDF(key){
     y+=14;
 
     txt('How to reach us',40,y,11,true,GREEN); y+=15;
-    txt('Phone / WhatsApp: +91 99120 58832   (Mon - Sat, 9:30 AM - 7:30 PM)',40,y,9.5,false,INK); y+=13;
-    txt('Visit: Shop No. 303, Comfort Homes 1, Kaithalapur, Hyderabad - 500018',40,y,9.5,false,INK); y+=13;
+    txt('Phone / WhatsApp: +91 99627 94336   (Mon - Sat, 9:30 AM - 7:30 PM)',40,y,9.5,false,INK); y+=13;
+    txt('Visit: Plot No. 12--8-82/7/18, Rama Jayam, Kaithalapur, Hyderabad - 500018',40,y,9.5,false,INK); y+=13;
     txt('We serve all major districts of Telangana and Andhra Pradesh.',40,y,9.5,false,INK); y+=18;
     txt('PM Surya Ghar subsidy up to Rs. 78,000 for homes - we file the application for you, free.',40,y,9.5,true,GREEN);
 
     ln(40,H-56,W-40,H-56,0.7,INK);
-    txt('Generated '+new Date().toLocaleDateString('en-IN')+"  |  Prices are indicative - call +91 99120 58832 for today's price.",40,H-40,8,false,GREY);
+    txt('Generated '+new Date().toLocaleDateString('en-IN')+"  |  Prices are indicative - call +91 99627 94336 for today's price.",40,H-40,8,false,GREY);
     txt('This sheet was prepared by Gayatri Green Energy - rooftop solar specialists for Telangana & AP.',40,H-26,8,false,GREY);
 
     var content=ops.join('\n');
@@ -1748,10 +1745,10 @@ function makePDF(key){
     } else if(url === 'ms'){
       toast(b.name.split('(')[0].trim()+' PDF downloaded','check');
     } else {
-      toast('Automatic download blocked - tap the button again or WhatsApp us at 99120 58832','alert');
+      toast('Automatic download blocked - tap the button again or WhatsApp us at 99627 94336','alert');
     }
   }catch(e){
-    toast('Download failed - please call 99120 58832 for the sheet','alert');
+    toast('Download failed - please call 99627 94336 for the sheet','alert');
   }
 }
 function pdfEsc(s){ return String(s).replace(/\\/g,'\\\\').replace(/\(/g,'\\(').replace(/\)/g,'\\)'); }
@@ -1908,7 +1905,7 @@ safe(function(){
     $('#billOut').textContent=inr(bill);
     var kW=Math.min(Math.max(Math.round(bill/1000),1),10);
     var subsidy=kW===1?30000:(kW===2?60000:78000);
-    var cost=kW<=2?kW*65000:(kW<=5?kW*60000:kW*55000);
+    var cost=kW<=2?kW*75000:(kW<=3?kW*70000:kW*60000);
     var net=cost-subsidy;
     var saveMo=Math.min(bill*0.9,kW*1100);
     var payback=(net/(saveMo*12)).toFixed(1);
@@ -1927,7 +1924,7 @@ safe(function(){
     var c=calc();
     var msg='Hi Gayatri Green Energy! My monthly current bill is about '+inr(c.bill)+
       '. Your calculator suggests a '+c.kW+' kW system (approx '+inr(c.net)+' after subsidy, ~'+c.payback+' yr payback). Please share an exact quote for my roof.';
-    window.open('https://wa.me/919912058832?text='+encodeURIComponent(msg),'_blank');
+    window.open('https://wa.me/919962794336?text='+encodeURIComponent(msg),'_blank');
     toast('Opening WhatsApp with your estimate','message-circle');
   });
 });
@@ -1947,7 +1944,7 @@ safe(function(){
     var msg=$('#qMsg').value.trim();
     var text='Hi Gayatri Green Energy! I want a free solar quote.\n\nName: '+name+'\nPhone: '+phone+
       '\nPlace: '+city+'\nMonthly bill: '+bill+(msg?'\nNote: '+msg:'')+'\n\nPlease contact me.';
-    window.open('https://wa.me/919912058832?text='+encodeURIComponent(text),'_blank');
+    window.open('https://wa.me/919962794336?text='+encodeURIComponent(text),'_blank');
     toast('Thanks '+name.split(' ')[0]+'! Opening WhatsApp','check');
     form.reset();
   });
