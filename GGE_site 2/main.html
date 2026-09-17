@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FDF3DC">
+<title>Gayatri Green Energy — Rooftop Solar in Hyderabad, Telangana & AP</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23FDF3DC'/><circle cx='16' cy='16' r='8' fill='%23F0A93C'/></svg>">
+<script>
+/* Set theme BEFORE first paint — no flash */
+(function(){try{
+  var t=localStorage.getItem('gge-theme');
+  if(!t){ t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'; }
+  document.documentElement.setAttribute('data-theme',t);
+}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Archivo:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ================= THEMED TOKENS (translucent glass) ================= */
+html[data-theme="light"]{
+  color-scheme:light;
+  --bgfx:linear-gradient(165deg,#FCF5E4 0%,#F0F4E4 42%,#E4EEDD 100%);
+  --orb1:radial-gradient(circle,rgba(255,205,110,.75),rgba(255,205,110,0) 65%);
+  --orb2:radial-gradient(circle,rgba(140,205,160,.65),rgba(140,205,160,0) 65%);
+  --orb3:radial-gradient(circle,rgba(240,169,60,.35),rgba(240,169,60,0) 65%);
+  --ink:#14261B; --ink2:#3E5347; --ink3:#63756B;
+  --green:#1D6A40; --green2:#0F4A2A;
+  --amber:#F0A93C; --amber2:#C9881B; --bad:#A4472F;
+  --logo-ink:#14261B;
+  --glass:rgba(255,255,255,.55);
+  --glass-soft:rgba(255,255,255,.34);
+  --glass-strong:rgba(255,255,255,.72);
+  --fillcell:rgba(255,255,255,.5);
+  --fillcell2:rgba(255,255,255,.3);
+  --gborder:rgba(255,255,255,.65);
+  --gline:rgba(20,38,27,.12);
+  --gline2:rgba(20,38,27,.24);
+  --gshadow:0 10px 40px rgba(20,38,27,.10);
+  --glow:inset 0 1px 0 rgba(255,255,255,.65);
+  --hover:rgba(255,255,255,.55);
+  --tabact:rgba(20,38,27,.85); --tabact-ink:#fff;
+  --svgfill:rgba(255,255,255,.62);
+  --inputbg:rgba(255,255,255,.65);
+  --focusring:rgba(29,106,64,.18);
+  --errring:rgba(164,71,47,.15);
+  --mtc:#FDF3DC;
+}
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bgfx:linear-gradient(165deg,#12241B 0%,#0C1A13 45%,#091410 100%);
+  --orb1:radial-gradient(circle,rgba(240,169,60,.30),rgba(240,169,60,0) 65%);
+  --orb2:radial-gradient(circle,rgba(56,168,116,.28),rgba(56,168,116,0) 65%);
+  --orb3:radial-gradient(circle,rgba(240,169,60,.16),rgba(240,169,60,0) 65%);
+  --ink:#E9F1E9; --ink2:#AFC3B3; --ink3:#83998B;
+  --green:#5BC98E; --green2:#2E7A50;
+  --amber:#F0A93C; --amber2:#F0B44E; --bad:#E0765B;
+  --logo-ink:#EAF2EA;
+  --glass:rgba(30,42,35,.55);
+  --glass-soft:rgba(30,42,35,.38);
+  --glass-strong:rgba(36,50,42,.74);
+  --fillcell:rgba(255,255,255,.07);
+  --fillcell2:rgba(255,255,255,.045);
+  --gborder:rgba(255,255,255,.16);
+  --gline:rgba(255,255,255,.10);
+  --gline2:rgba(255,255,255,.30);
+  --gshadow:0 10px 40px rgba(0,0,0,.45);
+  --glow:inset 0 1px 0 rgba(255,255,255,.12);
+  --hover:rgba(255,255,255,.09);
+  --tabact:rgba(240,169,60,.92); --tabact-ink:#14261B;
+  --svgfill:rgba(255,255,255,.10);
+  --inputbg:rgba(255,255,255,.08);
+  --focusring:rgba(91,201,142,.25);
+  --errring:rgba(224,118,91,.25);
+  --mtc:#12241B;
+}
+:root{
+  --serif:"Fraunces", Georgia, serif;
+  --sans:"Archivo", Helvetica, Arial, sans-serif;
+  --ease:cubic-bezier(.22,.7,.2,1);
+  --blur:blur(16px) saturate(1.5);
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  html[data-theme="light"]{--glass:rgba(255,255,255,.88);--glass-soft:rgba(255,255,255,.84);--glass-strong:rgba(255,255,255,.94)}
+  html[data-theme="dark"]{--glass:rgba(28,38,32,.96);--glass-soft:rgba(28,38,32,.93);--glass-strong:rgba(32,44,38,.97)}
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{background:var(--bgfx);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;transition:color .4s ease}
+::selection{background:var(--amber);color:#14261B}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+h1,h2,h3,p,li,td,th,b,strong{overflow-wrap:break-word}
+img,svg,iframe{max-width:100%}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:1rem;max-width:100%}
+.num{font-feature-settings:"tnum";font-variant-numeric:tabular-nums}
+.lucide{width:18px;height:18px;stroke-width:1.8;flex:none;display:inline-block;vertical-align:middle}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,28px);width:100%}
+section{position:relative}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.two-col>*,.hero-grid>*,.acc-body>*,.svc-body>*,.type-panel>*,.contact-grid>*,.cov-grid>*{min-width:0}
+
+/* ===== FIXED TRANSLUCENT BACKDROP ===== */
+#bgfx{position:fixed;inset:0;z-index:-2;background:var(--bgfx)}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:-1}
+.orb1{width:58vmax;height:58vmax;top:-26vmax;right:-18vmax;background:var(--orb1);animation:drift1 26s ease-in-out infinite alternate}
+.orb2{width:52vmax;height:52vmax;bottom:-24vmax;left:-16vmax;background:var(--orb2);animation:drift2 32s ease-in-out infinite alternate}
+.orb3{width:26vmax;height:26vmax;top:44%;left:-12vmax;background:var(--orb3);animation:drift1 38s ease-in-out infinite alternate-reverse}
+@keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(-4vmax,5vmax) scale(1.08)}}
+@keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(5vmax,-4vmax) scale(1.1)}}
+@media (prefers-reduced-motion:reduce){.orb{animation:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{transition:none;opacity:1;transform:none}}
+@keyframes fadeup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* ============ NAV (glass pill — ALWAYS VISIBLE / LOCKED) ============ */
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:transform .45s var(--ease)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:16px clamp(16px,4vw,28px);display:flex;align-items:center;justify-content:space-between;gap:12px;transition:all .45s var(--ease)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:999px;padding:7px 16px 7px 8px;box-shadow:var(--gshadow),var(--glow);transition:all .45s var(--ease)}
+.brand-mark{width:36px;height:36px;flex:none}
+.brand-mark [stroke]{stroke:var(--logo-ink)}
+.brand-name{font-family:var(--serif);font-weight:600;font-size:1.12rem;line-height:1.05;white-space:nowrap}
+.brand-name small{display:block;font-family:var(--sans);font-weight:600;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2)}
+.nav-links{display:flex;align-items:center;gap:2px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:999px;padding:5px;box-shadow:var(--gshadow),var(--glow)}
+.nav-links a{text-decoration:none;font-size:.82rem;font-weight:600;padding:8px 13px;border-radius:999px;color:var(--ink2);transition:color .25s,background .25s;white-space:nowrap}
+.nav-links a:hover{color:var(--ink);background:var(--hover)}
+.nav-links a.active{color:var(--tabact-ink);background:var(--tabact)}
+.nav-right{display:flex;gap:10px;align-items:center;min-width:0}
+.theme-btn{height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 15px 0 12px;border-radius:999px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);box-shadow:var(--gshadow),var(--glow);color:var(--ink);font-weight:600;font-size:.8rem;flex:none;transition:filter .25s}
+.theme-btn:hover{filter:brightness(1.08)}
+.theme-btn .lucide{width:17px;height:17px;color:var(--amber2)}
+.theme-btn .tmoon{display:none}
+html[data-theme="dark"] .theme-btn .tmoon{display:inline}
+html[data-theme="dark"] .theme-btn .tsun{display:none}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:rgba(29,106,64,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;text-decoration:none;font-weight:600;font-size:.85rem;padding:11px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.35);transition:background .25s;flex:none;box-shadow:var(--gshadow)}
+.nav-cta:hover{background:rgba(15,74,42,.92)}
+.nav-cta .lucide{width:15px;height:15px}
+#nav.float .nav-inner{padding-top:10px;padding-bottom:10px}
+#nav.float .brand{padding:5px 13px 5px 6px}
+#nav.float .brand-mark{width:30px;height:30px}
+#nav.float .brand-name{font-size:1rem}
+.nav-progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--amber);transition:width .15s linear;box-shadow:0 0 10px rgba(240,169,60,.8)}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--gborder);border-radius:50%;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);align-items:center;justify-content:center;flex:none;box-shadow:var(--gshadow),var(--glow)}
+#mnav{position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;background:var(--glass-soft);-webkit-backdrop-filter:blur(24px) saturate(1.4);backdrop-filter:blur(24px) saturate(1.4);display:flex;flex-direction:column;padding:20px 24px 24px;opacity:0;pointer-events:none;transition:opacity .35s var(--ease);overflow-y:auto}
+#mnav.open{opacity:1;pointer-events:auto}
+#mnav .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mnav .top .brand-name{min-width:0}
+#mnav nav{margin-top:5vh;display:flex;flex-direction:column}
+#mnav nav a{text-decoration:none;font-family:var(--serif);font-size:clamp(1.6rem,6.5vw,2.6rem);padding:11px 0;border-bottom:1px solid var(--gborder);display:flex;align-items:baseline;gap:14px;opacity:0;transform:translateY(18px);transition:opacity .5s var(--ease),transform .5s var(--ease),color .2s}
+#mnav nav a span{font-family:var(--sans);font-size:.65rem;font-weight:700;letter-spacing:.15em;color:var(--amber2)}
+#mnav nav a:hover{color:var(--green)}
+#mnav.open nav a{opacity:1;transform:none}
+#mnav .mfoot{margin-top:auto;padding-top:5vh;display:flex;gap:12px;flex-wrap:wrap}
+
+/* buttons (glass) */
+.btn{display:inline-flex;align-items:center;gap:10px;background:rgba(20,38,27,.82);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:14px 24px;font-weight:600;font-size:.95rem;text-decoration:none;transition:background .3s,filter .3s,transform .3s;box-shadow:var(--gshadow),var(--glow)}
+html[data-theme="dark"] .btn{background:linear-gradient(160deg,rgba(46,140,90,.85),rgba(21,94,56,.9))}
+.btn:hover{filter:brightness(1.15);transform:translateY(-2px)}
+.btn .lucide{transition:transform .3s}
+.btn:hover .lucide{transform:translateX(3px)}
+.btn.ghost{background:var(--glass);color:var(--ink);border:1px solid var(--gline2)}
+html[data-theme="dark"] .btn.ghost{background:var(--fillcell)}
+.btn.ghost:hover{background:rgba(20,38,27,.85);color:#fff}
+.btn.amber{background:rgba(240,169,60,.92);border:1px solid rgba(201,136,27,.7);color:#14261B}
+.btn.amber:hover{background:rgba(201,136,27,.95);filter:none}
+
+/* ============ HERO ============ */
+#top{padding:clamp(130px,16vh,180px) 0 clamp(50px,8vh,90px);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,56px);align-items:center}
+.tagline-telugu{font-family:"Noto Sans Telugu",var(--sans);color:var(--green);font-size:.95rem;font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tagline-telugu::before{content:"";width:34px;height:1px;background:var(--amber2);flex:none}
+.hero-grid h1{font-size:clamp(2.1rem,5.6vw,4.4rem);margin-bottom:20px}
+.hero-grid h1 em{font-style:italic;color:var(--green)}
+.hero-grid h1 .sunword{color:var(--amber2)}
+.hero-sub{font-size:clamp(.98rem,1.4vw,1.06rem);color:var(--ink2);max-width:36rem;margin-bottom:26px}
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:999px;padding:7px 14px;font-size:.76rem;font-weight:600;box-shadow:var(--gshadow),var(--glow)}
+.chip .lucide{width:14px;height:14px;color:var(--green)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.sun-clock{background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:22px;padding:clamp(18px,2.4vw,28px);box-shadow:var(--gshadow),var(--glow)}
+.sc-head{font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink2);margin-bottom:6px}
+.sc-time{font-family:var(--serif);font-size:clamp(1.9rem,3vw,2.5rem);font-weight:600;line-height:1}
+.sc-sub{font-size:.78rem;color:var(--ink2);margin:2px 0 10px}
+.sc-arc{width:100%;height:auto;margin:6px 0 4px}
+.sc-stats{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--gborder);padding-top:14px;gap:12px}
+.sc-stats b{font-family:var(--serif);font-size:clamp(1.2rem,2vw,1.5rem);font-weight:600;display:block;line-height:1.1}
+.sc-stats span{font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+
+/* ticker */
+.ticker{overflow:hidden;background:var(--glass-soft);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border-top:1px solid var(--gborder);border-bottom:1px solid var(--gborder)}
+.ticker-track{display:flex;width:max-content;animation:tick 32s linear infinite;padding:13px 0}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track span{display:flex;align-items:center;gap:24px;padding-right:24px;font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+.ticker-track i{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none;box-shadow:0 0 8px rgba(240,169,60,.9)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{padding:clamp(44px,7vh,70px) 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:22px;overflow:hidden;box-shadow:var(--gshadow),var(--glow)}
+.stat{padding:clamp(20px,3vw,34px);border-right:1px solid var(--gborder)}
+.stat:last-child{border-right:0}
+.stat b{font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,3rem);font-weight:600;display:block;line-height:1;margin-bottom:8px}
+.stat b sup{font-size:.45em;color:var(--amber2)}
+.stat span{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+
+/* section heads */
+.sec{padding:clamp(64px,10vh,100px) 0;border-top:1px solid var(--gborder)}
+.kicker{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.kicker b{font-size:.68rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--amber2)}
+.kicker i{width:44px;height:1px;background:var(--gline2)}
+.sec h2{font-size:clamp(1.75rem,4vw,3rem);max-width:22ch;margin-bottom:14px}
+.sec h2 em{font-style:italic;color:var(--green)}
+.sec-lead{color:var(--ink2);max-width:46rem;font-size:clamp(.96rem,1.3vw,1.03rem)}
+.two-col{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,4.5vw,60px);align-items:start}
+
+/* about */
+.about-note{border-left:2px solid var(--amber);padding-left:20px;margin-top:26px;font-family:var(--serif);font-style:italic;font-size:1.12rem;color:var(--ink2)}
+.about-facts{background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:20px;overflow:hidden;box-shadow:var(--gshadow),var(--glow)}
+.fact{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px clamp(14px,2vw,22px);border-bottom:1px solid var(--gborder);flex-wrap:wrap}
+.fact:nth-child(even){background:var(--fillcell2)}
+.fact:last-child{border-bottom:0}
+.fact span{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);flex:none}
+.fact b{font-family:var(--serif);font-weight:600;font-size:1rem;text-align:right;min-width:0}
+.glossary{margin-top:24px;background:var(--glass-soft);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px dashed var(--gline2);border-radius:16px;padding:18px clamp(14px,2vw,22px)}
+.glossary h4{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber2);margin-bottom:8px}
+.glossary p{font-size:.9rem;color:var(--ink2)}
+
+/* ============ SERVICES ============ */
+.svc{border-top:1px solid var(--gborder)}
+.svc:last-child{border-bottom:1px solid var(--gborder)}
+.svc-head{width:100%;background:none;border:0;display:grid;grid-template-columns:46px 1fr auto 46px;gap:16px;align-items:center;padding:24px clamp(10px,1.6vw,18px);text-align:left;transition:background .3s;border-radius:14px;color:inherit}
+.svc-head:hover,.svc.open .svc-head{background:var(--hover)}
+.svc-head .n{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--amber2)}
+.svc-head h3{font-size:clamp(1.15rem,2.2vw,1.42rem);font-weight:600;min-width:0}
+.svc-sum{font-size:.74rem;font-weight:600;color:var(--ink2);background:var(--fillcell);border:1px solid var(--gborder);border-radius:999px;padding:5px 12px;white-space:nowrap}
+.svc-head .go{width:46px;height:46px;border:1px solid var(--gline2);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .45s var(--ease),background .3s,color .3s;justify-self:end;background:var(--fillcell)}
+.svc.open .svc-head .go{transform:rotate(45deg);background:var(--tabact);color:var(--tabact-ink);border-color:var(--gborder)}
+.svc-panel{display:none}
+.svc.open .svc-panel{display:block;animation:fadeup .45s var(--ease)}
+.svc-body{margin:8px 0 26px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:18px;padding:clamp(18px,2.6vw,30px);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,3vw,40px);box-shadow:var(--gshadow),var(--glow)}
+.svc-body>p{grid-column:1/-1;color:var(--ink2);font-size:.95rem;max-width:70ch}
+.svc-inc{list-style:none;display:grid;gap:9px;font-size:.9rem}
+.svc-inc li{display:flex;gap:10px;align-items:flex-start}
+.svc-inc .lucide{width:16px;height:16px;color:var(--green);margin-top:4px}
+.svc-inc b{font-weight:600}
+.svc-side{display:grid;gap:12px;align-content:start}
+.svc-meta{display:flex;flex-wrap:wrap;gap:8px}
+.svc-meta span{background:var(--fillcell);border:1px solid var(--gborder);border-radius:999px;padding:6px 13px;font-size:.76rem;font-weight:600}
+.svc-meta span b{font-family:var(--serif);font-weight:600;font-size:.9rem}
+.svc-wa{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.86rem;color:var(--green);text-decoration:none;border:1px solid var(--green);border-radius:999px;padding:11px 18px;transition:all .3s;justify-self:start;background:var(--fillcell)}
+.svc-wa:hover{background:var(--green);color:#fff}
+.svc-wa .lucide{width:15px;height:15px}
+
+/* ============ SYSTEM TYPES ============ */
+.tabs{display:inline-flex;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:999px;padding:5px;gap:4px;margin:30px 0 28px;box-shadow:var(--gshadow);max-width:100%}
+.tab{border:0;background:transparent;padding:10px clamp(14px,2.4vw,22px);border-radius:999px;font-weight:600;font-size:.88rem;color:var(--ink2);transition:all .3s}
+.tab.active{background:var(--tabact);color:var(--tabact-ink)}
+.type-panel{display:none;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,48px);align-items:start}
+.type-panel.show{display:grid;animation:fadeup .5s var(--ease)}
+.type-panel h3{font-size:clamp(1.3rem,2.4vw,1.7rem);margin-bottom:12px}
+.type-panel .desc{color:var(--ink2);margin-bottom:20px;font-size:.96rem}
+.type-list{list-style:none;display:grid;gap:11px}
+.type-list li{display:flex;gap:11px;align-items:flex-start;font-size:.93rem}
+.type-list .lucide{width:17px;height:17px;color:var(--green);margin-top:4px}
+.type-list b{font-weight:600}
+.diagram{background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:18px;padding:clamp(14px,2vw,26px);box-shadow:var(--gshadow),var(--glow)}
+.diagram svg{width:100%;height:auto}
+.diagram figcaption{margin-top:12px;font-size:.76rem;color:var(--ink3);text-align:center}
+.compare{margin-top:44px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:18px;overflow:hidden;box-shadow:var(--gshadow)}
+.compare table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
+.compare th{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);text-align:left;padding:13px 16px;background:var(--fillcell);border-bottom:1px solid var(--gline2)}
+.compare td{padding:12px 16px;border-bottom:1px solid var(--gborder);vertical-align:top}
+.compare tr:last-child td{border-bottom:0}
+.compare .lucide{width:16px;height:16px;vertical-align:-3px}
+.yes{color:var(--green)}.no{color:var(--bad)}
+
+/* ============ BRANDS ============ */
+.acc{border-top:1px solid var(--gborder);margin-top:40px}
+.acc-item{border-bottom:1px solid var(--gborder)}
+.acc-head{width:100%;background:none;border:0;display:grid;grid-template-columns:1.15fr .95fr auto 46px;gap:16px;align-items:center;padding:24px clamp(10px,1.6vw,18px);text-align:left;transition:background .3s;border-radius:14px;color:inherit;min-width:0}
+.acc-head:hover,.acc-item.open .acc-head{background:var(--hover)}
+.acc-head .bname{font-family:var(--serif);font-size:clamp(1.25rem,2.4vw,1.8rem);font-weight:600;display:flex;align-items:center;gap:13px;min-width:0;flex-wrap:wrap;white-space:normal}
+.acc-head .bname i{width:9px;height:9px;border-radius:50%;background:var(--amber);flex:none;box-shadow:0 0 10px rgba(240,169,60,.8)}
+.acc-head .bmeta{font-size:.84rem;color:var(--ink2);min-width:0}
+.acc-head .btag{font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:5px 12px;text-align:center;white-space:nowrap;background:var(--fillcell)}
+.acc-head .chev{width:46px;height:46px;border:1px solid var(--gline2);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .45s var(--ease),background .3s,color .3s;justify-self:end;background:var(--fillcell);flex:none}
+.acc-item.open .chev{transform:rotate(180deg);background:var(--tabact);color:var(--tabact-ink);border-color:var(--gborder)}
+.acc-panel{display:none}
+.acc-item.open .acc-panel{display:block;animation:fadeup .45s var(--ease)}
+.acc-body{margin:8px 0 26px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:18px;padding:clamp(18px,2.6vw,30px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(22px,3vw,36px);box-shadow:var(--gshadow),var(--glow)}
+.acc-body .bdesc{color:var(--ink2);font-size:.94rem;margin-bottom:16px}
+.btable{width:100%;border-collapse:collapse;font-size:.85rem;min-width:460px}
+.btable th{text-align:left;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);padding:9px 10px;border-bottom:1px solid var(--gline2)}
+.btable td{padding:10px 10px;border-bottom:1px solid var(--gborder);vertical-align:top}
+.btable td:first-child{font-weight:600}
+.price-band{display:flex;justify-content:space-between;gap:12px;font-size:.84rem;color:var(--ink2);border-top:1px dashed var(--gline2);padding-top:12px;margin-top:14px;flex-wrap:wrap}
+.price-band b{font-family:var(--serif);font-size:1.02rem;color:var(--ink)}
+.pdf-btn{display:inline-flex;align-items:center;gap:10px;margin-top:16px;background:rgba(240,169,60,.92);border:1px solid rgba(201,136,27,.7);color:#14261B;font-weight:700;font-size:.85rem;padding:13px 20px;border-radius:999px;transition:all .3s;text-decoration:none;box-shadow:0 6px 20px rgba(240,169,60,.35)}
+.pdf-btn:hover{background:rgba(201,136,27,.95);transform:translateY(-2px)}
+.pdf-btn .lucide{width:16px;height:16px}
+.pdf-note{display:block;font-size:.72rem;color:var(--ink3);margin-top:8px}
+.pair-line{font-size:.88rem;padding:12px 15px;background:var(--fillcell);border-radius:12px;border-left:2px solid var(--amber);margin-bottom:12px}
+.pair-line b{font-weight:700}
+.pair-line.greenline{border-left-color:var(--green)}
+
+/* ============ PROCESS (dark glass) ============ */
+#process{background:linear-gradient(160deg,rgba(13,30,20,.78),rgba(9,22,15,.86));-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);color:#F2F5EC;border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.1);box-shadow:0 -20px 60px rgba(20,38,27,.12),0 20px 60px rgba(20,38,27,.12)}
+html[data-theme="dark"] #process{background:linear-gradient(160deg,rgba(4,11,7,.92),rgba(3,8,5,.96));border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.08)}
+#process .kicker b{color:var(--amber)}
+#process .sec-lead{color:rgba(242,245,236,.72)}
+#process h2 em{color:var(--amber)}
+.sticky-col{position:sticky;top:110px}
+.docs-card{margin-top:30px;border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:clamp(18px,2.4vw,26px);background:rgba(255,255,255,.07)}
+.docs-card h4{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:12px;font-weight:700}
+.docs-card p{font-size:.85rem;color:rgba(242,245,236,.65);margin-bottom:14px}
+.doc-chips{display:flex;flex-wrap:wrap;gap:8px}
+.doc-chips span{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 12px;font-size:.75rem;font-weight:600;background:rgba(255,255,255,.06)}
+.doc-chips .lucide{width:13px;height:13px;color:var(--amber)}
+#process .call-mini{margin-top:22px;display:inline-flex;align-items:center;gap:12px;color:#F2F5EC;text-decoration:none;font-family:var(--serif);font-size:1.3rem}
+#process .call-mini .lucide{color:var(--amber)}
+.tl{position:relative;padding-left:52px}
+.tl::before{content:"";position:absolute;left:17px;top:8px;bottom:8px;width:2px;background:rgba(255,255,255,.18)}
+.tl-fill{position:absolute;left:17px;top:8px;width:2px;height:0;background:var(--amber);max-height:calc(100% - 16px);box-shadow:0 0 12px rgba(240,169,60,.7)}
+.tl-step{position:relative;padding:0 0 48px}
+.tl-step:last-child{padding-bottom:8px}
+.tl-node{position:absolute;left:-52px;top:0;width:38px;height:38px;border-radius:50%;border:2px solid rgba(255,255,255,.3);background:rgba(8,16,11,.9);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:.95rem;transition:all .5s var(--ease)}
+.tl-step.done .tl-node{background:var(--amber);border-color:var(--amber);color:#14261B;box-shadow:0 0 18px rgba(240,169,60,.6)}
+.tl-step h3{font-size:clamp(1.2rem,2vw,1.5rem);margin-bottom:9px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tl-step h3 small{font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(240,169,60,.5);border-radius:999px;padding:4px 10px}
+.tl-step p{color:rgba(242,245,236,.68);font-size:.94rem}
+
+/* coverage */
+.cov-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gborder);border:1px solid var(--gborder);border-radius:20px;overflow:hidden;margin-top:36px;box-shadow:var(--gshadow)}
+.cov-col{background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);padding:clamp(22px,3vw,32px)}
+.cov-col h3{font-size:1.35rem;margin-bottom:6px}
+.cov-col>span{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--amber2)}
+.cov-list{margin-top:16px;font-size:.94rem;color:var(--ink2);line-height:2}
+.cov-list i{font-style:normal;color:var(--amber2);margin:0 9px}
+.cov-foot{margin-top:20px;font-size:.9rem;color:var(--ink2);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cov-foot a{color:var(--green);font-weight:700}
+.cov-foot .lucide{width:16px;height:16px;color:var(--green)}
+
+/* ============ FAQ ============ */
+.faq-item{border-bottom:1px solid var(--gborder)}
+.faq-head{width:100%;background:none;border:0;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 8px;text-align:left;font-family:var(--serif);font-size:clamp(1.05rem,1.8vw,1.2rem);font-weight:600;color:var(--ink);transition:color .25s}
+.faq-head:hover{color:var(--green)}
+.faq-head .lucide{transition:transform .4s var(--ease);color:var(--green)}
+.faq-item.open .faq-head .lucide{transform:rotate(45deg)}
+.faq-panel{display:none}
+.faq-item.open .faq-panel{display:block;animation:fadeup .45s var(--ease)}
+.faq-body{margin:0 0 20px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:16px;padding:20px 20px 22px;color:var(--ink2);font-size:.94rem;max-width:none;box-shadow:var(--gshadow),var(--glow)}
+.faq-body p+p{margin-top:10px}
+.faq-body ul{list-style:none;margin:12px 0;display:grid;gap:8px}
+.faq-body ul li{display:flex;gap:10px;align-items:flex-start}
+.faq-body ul .lucide{width:15px;height:15px;color:var(--green);margin-top:4px}
+.faq-body table{border-collapse:collapse;margin:12px 0;font-size:.88rem;min-width:min(100%,320px)}
+.faq-body td,.faq-body th{border:1px solid var(--gline2);padding:8px 15px;text-align:left}
+.faq-body th{background:var(--fillcell);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink)}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,4vw,56px);margin-top:40px;align-items:start}
+.cform{background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:22px;padding:clamp(22px,3vw,34px);box-shadow:var(--gshadow),var(--glow)}
+.cform h3{font-size:1.5rem;margin-bottom:6px}
+.cform>p{font-size:.9rem;color:var(--ink2);margin-bottom:22px}
+.fld{margin-bottom:18px}
+.fld label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);margin-bottom:8px}
+.fld input,.fld select,.fld textarea{width:100%;background:var(--inputbg);border:1px solid var(--gline2);border-radius:12px;padding:13px 15px;color:var(--ink);transition:border-color .25s,box-shadow .25s}
+.fld input::placeholder,.fld textarea::placeholder{color:var(--ink3)}
+.fld select option{color:#14261B;background:#fff}
+html[data-theme="dark"] .fld select option{color:#E9F1E9;background:#1E2A23}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px var(--focusring)}
+.fld.err input{border-color:var(--bad);box-shadow:0 0 0 3px var(--errring)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cinfo-card{background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:22px 22px 0 0;border-bottom:0;padding:24px clamp(18px,2.4vw,28px);display:grid;gap:15px;box-shadow:var(--gshadow)}
+.cinfo-row{display:flex;gap:14px;align-items:flex-start}
+.cinfo-row .ic{width:40px;height:40px;flex:none;border:1px solid var(--gborder);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green);background:var(--fillcell)}
+.cinfo-row b{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);margin-bottom:3px;font-weight:700}
+.cinfo-row a{text-decoration:none;font-weight:600}
+.cinfo-row a:hover{color:var(--green)}
+.map-frame{position:relative;border:1px solid var(--gborder);border-radius:0 0 22px 22px;overflow:hidden;box-shadow:var(--gshadow)}
+.map-frame iframe{width:100%;height:clamp(260px,40vw,340px);border:0;display:block;filter:saturate(1.05) contrast(.98);transition:filter .5s}
+html[data-theme="dark"] .map-frame iframe{filter:invert(.9) hue-rotate(180deg) saturate(.75) brightness(.9)}
+.map-overlay{position:absolute;left:12px;bottom:12px;background:var(--glass-strong);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:14px;padding:12px 16px;box-shadow:var(--gshadow);max-width:min(270px,70%)}
+.map-overlay b{font-family:var(--serif);font-size:.96rem;display:block;line-height:1.35}
+.map-overlay a{display:inline-flex;align-items:center;gap:6px;margin-top:7px;font-size:.78rem;font-weight:700;color:var(--green);text-decoration:none}
+.map-overlay a:hover{text-decoration:underline}
+.map-overlay .lucide{width:13px;height:13px}
+
+/* footer */
+footer{border-top:1px solid var(--gborder);padding:clamp(40px,7vh,56px) 0 32px;background:var(--glass-soft);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(24px,4vw,44px)}
+.foot-grid h5{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);margin-bottom:14px}
+.foot-grid ul{list-style:none;display:grid;gap:8px;font-size:.9rem}
+.foot-grid ul a{text-decoration:none;color:var(--ink2)}
+.foot-grid ul a:hover{color:var(--green)}
+.foot-tel{font-family:var(--serif);font-size:1.6rem;text-decoration:none;font-weight:600}
+.foot-tel:hover{color:var(--green)}
+.foot-bottom{margin-top:40px;padding-top:20px;border-top:1px solid var(--gline);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.78rem;color:var(--ink3)}
+
+/* toast / fab */
+#toasts{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:300;display:flex;flex-direction:column;gap:10px;align-items:center;pointer-events:none;width:max-content;max-width:92vw}
+.toast{display:flex;align-items:center;gap:10px;background:rgba(16,24,20,.88);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:12px 20px;font-size:.86rem;font-weight:600;box-shadow:0 14px 40px rgba(0,0,0,.4);animation:fadeup .45s var(--ease);max-width:92vw;flex-wrap:wrap;justify-content:center}
+.toast .lucide{width:16px;height:16px;color:var(--amber)}
+.toast a{color:var(--amber);font-weight:700;text-decoration:underline;text-underline-offset:2px;pointer-events:auto}
+.fab{display:none;position:fixed;right:18px;bottom:18px;z-index:90;width:56px;height:56px;border-radius:50%;background:rgba(29,106,64,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;border:1px solid rgba(255,255,255,.35);align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(15,74,42,.4);text-decoration:none;animation:pulse 2.6s infinite}
+@keyframes pulse{0%{box-shadow:0 12px 30px rgba(15,74,42,.4),0 0 0 0 rgba(29,106,64,.35)}70%{box-shadow:0 12px 30px rgba(15,74,42,.4),0 0 0 16px rgba(29,106,64,0)}100%{box-shadow:0 12px 30px rgba(15,74,42,.4),0 0 0 0 rgba(29,106,64,0)}}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1000px){
+  body{overflow-x:hidden}
+  .nav-links{display:none}
+  .burger{display:flex}
+  .hero-grid,.two-col,.type-panel.show,.acc-body,.svc-body,.contact-grid,.cov-grid{grid-template-columns:1fr}
+  .sticky-col{position:static}
+  .svc-body>p{grid-column:auto}
+  /* BRAND ROWS: bulletproof flex — name shrinks & wraps, never overflows */
+  .acc-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:20px 12px}
+  .acc-head .bname{order:1;flex:1 1 0;min-width:0}
+  .acc-head .chev{order:2;flex:none}
+  .acc-head .bmeta{order:3;flex:1 1 100%}
+  .acc-head .btag{order:4;align-self:flex-start}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--gborder)}
+  /* SERVICE ROWS: same flex treatment */
+  .svc-head{display:flex;align-items:center;gap:12px;padding:20px 12px}
+  .svc-head h3{flex:1 1 0;min-width:0}
+  .svc-head .go{flex:none}
+  .svc-head .n{display:none}
+  .svc-head .svc-sum{display:none}
+  .btable{min-width:330px;font-size:.8rem}
+  .btable th,.btable td{padding:8px}
+  .compare table{min-width:520px;font-size:.8rem}
+  .compare th,.compare td{padding:9px 10px}
+  .calc-grid{grid-template-columns:1fr 1fr!important}
+  .f2{grid-template-columns:1fr}
+  .fab{display:flex}
+  .foot-grid{grid-template-columns:1fr}
+  .tl{padding-left:44px}
+  .tl::before,.tl-fill{left:15px}
+  .tl-node{left:-44px;width:32px;height:32px;font-size:.82rem}
+  .nav-cta{padding:11px 13px}
+}
+@media (max-width:500px){
+  .nav-inner{padding-left:12px;padding-right:12px;gap:8px}
+  .nav-right{gap:8px}
+  .brand{gap:9px;padding:6px 12px 6px 7px}
+  .brand-name{font-size:.95rem}
+  .nav-cta span{display:none}
+  .theme-btn .tlabel{display:none}
+  .theme-btn{padding:0;width:42px;justify-content:center}
+  #mnav .top .brand-name{font-size:.9rem}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  #mnav .mfoot .btn{width:100%;justify-content:center}
+  .acc-body,.svc-body,.faq-body{padding:16px}
+}
+@media (max-width:380px){
+  .nav-cta{display:none}
+  .brand-mark{width:28px;height:28px}
+  .brand-name{font-size:.85rem}
+  #nav.float .brand-mark{width:26px;height:26px}
+}
+</style>
+</head>
+<body>
+
+<div id="bgfx" aria-hidden="true"></div>
+<div class="orb orb1" aria-hidden="true"></div>
+<div class="orb orb2" aria-hidden="true"></div>
+<div class="orb orb3" aria-hidden="true"></div>
+
+<!-- ================= NAV (locked — never hides) ================= -->
+<header id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 40 400 400" fill="none" aria-hidden="true" xmlns="http://w3.org">
+        <image href="https://uploads.onecompiler.io/42pw6r2yk/1789029016259/963090b9615176ef8ac2333042c564aa-removebg-preview.png" x="0" y="0" width="500" height="400" />
+      </svg>
+      <span class="brand-name">Gayatri <em style="color:var(--green);font-style:italic">Green</em> Energy<small>Solar · Hyderabad</small></span>
+    </a>
+    <nav class="nav-links" id="deskLinks">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#systems">Systems</a>
+      <a href="#brands">Brands</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-btn" aria-label="Switch between dark and light mode">
+        <span class="tsun"><i data-i="sun"></i></span>
+        <span class="tmoon"><i data-i="moon"></i></span>
+        <span class="tlabel">Dark</span>
+      </button>
+      <a class="nav-cta" href="tel:+919912058832"><i data-i="phone"></i><span>99120 58832</span></a>
+      <button class="burger" id="burger" aria-label="Open menu"><i data-i="menu"></i></button>
+    </div>
+    <div class="nav-progress" id="navProg"></div>
+  </div>
+</header>
+
+<div id="mnav" aria-hidden="true">
+  <div class="top">
+    <span class="brand-name" style="font-size:1.15rem">Gayatri <em style="color:var(--green)">Green</em> Energy</span>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="theme-btn" aria-label="Switch between dark and light mode">
+        <span class="tsun"><i data-i="sun"></i></span>
+        <span class="tmoon"><i data-i="moon"></i></span>
+        <span class="tlabel">Dark</span>
+      </button>
+      <button class="burger" id="mclose" style="display:flex" aria-label="Close menu"><i data-i="x"></i></button>
+    </div>
+  </div>
+  <nav>
+    <a href="#about" style="transition-delay:.05s"><span>01</span>About</a>
+    <a href="#services" style="transition-delay:.1s"><span>02</span>Services</a>
+    <a href="#systems" style="transition-delay:.15s"><span>03</span>System Types</a>
+    <a href="#brands" style="transition-delay:.2s"><span>04</span>Brands & PDFs</a>
+    <a href="#process" style="transition-delay:.25s"><span>05</span>Process</a>
+    <a href="#faq" style="transition-delay:.3s"><span>06</span>FAQ</a>
+    <a href="#contact" style="transition-delay:.35s"><span>07</span>Contact</a>
+  </nav>
+  <div class="mfoot">
+    <a class="btn" href="tel:+919912058832"><i data-i="phone"></i>Call 99120 58832</a>
+    <a class="btn ghost" href="https://wa.me/919912058832" target="_blank" rel="noopener"><i data-i="message-circle"></i>WhatsApp</a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="tagline-telugu rv in">మీ ఇంటికి సూర్యుని శక్తి — the sun's power, for your home</p>
+      <h1 class="rv in" style="transition-delay:.08s">Your roof can pay your <em>electricity bill</em> — with free <span class="sunword">sunlight.</span></h1>
+      <p class="hero-sub rv in" style="transition-delay:.16s">Gayatri Green Energy is a dedicated rooftop solar company serving homes, shops and farms across Hyderabad, Telangana and Andhra Pradesh. We handle everything — documents, government subsidy, installation and lifetime support. In simple words, at honest prices.</p>
+      <div class="hero-chips rv in" style="transition-delay:.22s">
+        <span class="chip"><i data-i="badge-rupee"></i>PM Surya Ghar subsidy up to ₹78,000</span>
+        <span class="chip"><i data-i="map-pin"></i>Free site visit in 48 hours</span>
+      </div>
+      <div class="hero-ctas rv in" style="transition-delay:.28s">
+        <a class="btn" href="tel:+919912058832"><i data-i="phone"></i>Call 99120 58832</a>
+        <a class="btn ghost" href="#contact">Get a free quote<i data-i="arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="sun-clock rv in" style="transition-delay:.2s">
+      <p class="sc-head">Live sun meter</p>
+      <div class="sc-time num" id="clockTime">--:--</div>
+      <p class="sc-sub">Indian Standard Time </p>
+      <svg class="sc-arc" viewBox="0 0 320 120" aria-hidden="true">
+        <path d="M20 92 Q160 -18 300 92" fill="none" stroke="var(--gline2)" stroke-width="1.4" stroke-dasharray="3 5"/>
+        <path id="arcFill" d="M20 92 Q160 -18 300 92" fill="none" stroke="var(--amber2)" stroke-width="2.4" pathLength="100" stroke-dasharray="0 100" stroke-linecap="round"/>
+        <line x1="10" y1="92" x2="310" y2="92" stroke="var(--gline)" stroke-width="1.2"/>
+        <circle id="sunDot" r="8" fill="var(--amber)" stroke="var(--ink)" stroke-width="1.6"/>
+        <text x="18" y="110" font-size="9" fill="var(--ink3)" font-family="Archivo">6 AM</text>
+        <text x="150" y="110" font-size="9" fill="var(--ink3)" font-family="Archivo">NOON</text>
+        <text x="278" y="110" font-size="9" fill="var(--ink3)" font-family="Archivo">6 PM</text>
+      </svg>
+      <div class="sc-stats num">
+        <div><b id="genNow">0.00 kW</b><span>Making right now</span></div>
+        <div><b id="genToday">0.0 units</b><span>Made so far today</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Waaree <i></i> Adani Solar <i></i> Emmvee <i></i> Microtek <i></i> Luminous <i></i> Growatt <i></i> Solis <i></i> Tata Power Solar <i></i> Vikram Solar <i></i> Sungrow <i></i></span>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid rv">
+      <div class="stat"><b class="num"><span data-count="450">0</span><sup>+</sup></b><span>Homes & shops powered</span></div>
+      <div class="stat"><b class="num"><span data-count="3.2" data-dec="1">0</span><sup>MW</sup></b><span>Solar capacity installed</span></div>
+      <div class="stat"><b class="num"><span data-count="8">0</span><sup>yrs</sup></b><span>Serving two states</span></div>
+      <div class="stat"><b class="num"><span data-count="30">0</span><sup>+</sup></b><span>Districts covered</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec" id="about" style="border-top:0">
+  <div class="wrap two-col">
+    <div class="rv">
+      <div class="kicker"><b>(01) — About us</b><i></i></div>
+      <h2>A dedicated solar company that treats <em>your roof like our own.</em></h2>
+      <p class="sec-lead">Gayatri Green Energy is a specialist rooftop solar company based in Kaithalapur, Hyderabad. We do one thing — solar — and we do it end to end: survey, design, government approvals, installation and lifetime service.</p>
+      <p class="sec-lead" style="margin-top:14px">We install only <b>ALMM-approved, Indian-made panels</b> with branded inverters, so your subsidy is safe and your warranty actually works. Our engineers explain everything in Telugu, Hindi or English — before you spend a single rupee.</p>
+      <p class="about-note">"Solar is not a luxury anymore. Done right, it is the cheapest electricity your family will ever buy."</p>
+    </div>
+    <div class="rv" style="transition-delay:.12s">
+      <div class="about-facts">
+        <div class="fact"><span>Office</span><b>Shop No. 303, Comfort Homes 1, Kaithalapur, Hyderabad — 500018</b></div>
+        <div class="fact"><span>Phone / WhatsApp</span><b><a href="tel:+919912058832" style="text-decoration:none">+91 99120 58832</a></b></div>
+        <div class="fact"><span>Service area</span><b>Telangana & Andhra Pradesh</b></div>
+        <div class="fact"><span>Subsidy help</span><b>PM Surya Ghar — we file it for you</b></div>
+        <div class="fact"><span>Work timing</span><b>Mon – Sat, 9:30 AM – 7:30 PM</b></div>
+        <div class="fact"><span>Site survey</span><b>Free, within 48 hours of your call</b></div>
+      </div>
+      <div class="glossary">
+        <h4>New to solar? Two words only</h4>
+        <p><b>kW</b> = the size of your system (bigger bill → bigger kW). <b>Units</b> = what the electricity meter counts. Roughly, <b>1 kW of solar makes ~120 units a month</b> in Telangana — enough for lights, fans, TV and a fridge in a small home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="kicker rv"><b>(02) — What we do</b><i></i></div>
+    <h2 class="rv">Everything solar — from <em>first call</em> to lifetime care.</h2>
+    <p class="sec-lead rv">Tap any row (or the +) to see exactly what's included, who it's for, and what it costs. One team, one responsibility — you never run behind DISCOM offices or service centres. That's our job.</p>
+
+    <div class="rv" style="margin-top:36px" id="svcList">
+
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="n">a.</span><h3>Home rooftop solar</h3>
+          <span class="svc-sum">1–10 kW · for houses</span>
+          <span class="go"><i data-i="plus"></i></span>
+        </button>
+        <div class="svc-panel"><div><div class="svc-body">
+          <p>The most popular choice for independent houses and duplexes. An on-grid system quietly converts your daytime bill into near-zero, while net metering banks your extra units. We size it to your actual usage — not to what we want to sell.</p>
+          <ul class="svc-inc">
+            <li><i data-i="check"></i><span><b>Free site survey</b> — shadow analysis, roof strength and wiring check</span></li>
+            <li><i data-i="check"></i><span><b>Custom design</b> — panel count & layout matched to your bill</span></li>
+            <li><i data-i="check"></i><span><b>ALMM panels + branded inverter</b> (Waaree / Emmvee / Adani + Microtek / Growatt)</span></li>
+            <li><i data-i="check"></i><span><b>Full installation</b> — elevated structure, cabling, earthing, lightning protection</span></li>
+            <li><i data-i="check"></i><span><b>Net meter + subsidy</b> — DISCOM application & PM Surya Ghar filing done by us</span></li>
+            <li><i data-i="check"></i><span><b>App setup + 5-year support</b> — monitor your units from your phone</span></li>
+          </ul>
+          <div class="svc-side">
+            <div class="svc-meta">
+              <span>Size: <b>1 – 10 kW</b></span>
+              <span>From: <b>₹65,000</b></span>
+              <span>Install: <b>2–3 days</b></span>
+              <span>Payback: <b>3–5 yrs</b></span>
+            </div>
+            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi%20Gayatri%20Green%20Energy!%20I%20want%20a%20quote%20for%20home%20rooftop%20solar." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about home solar</a>
+          </div>
+        </div></div></div>
+      </article>
+
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="n">b.</span><h3>Shops, clinics & offices</h3>
+          <span class="svc-sum">5–25 kW · commercial</span>
+          <span class="go"><i data-i="plus"></i></span>
+        </button>
+        <div class="svc-panel"><div><div class="svc-body">
+          <p>Shops, clinics, bakeries, small factories and offices use most of their power during the day — exactly when solar produces. That match makes commercial rooftop the fastest-payback solar we install, often returning your money in under 4 years.</p>
+          <ul class="svc-inc">
+            <li><i data-i="check"></i><span><b>Load & tariff analysis</b> — we study your past 12 bills before quoting</span></li>
+            <li><i data-i="check"></i><span><b>3-phase system design</b> for higher loads</span></li>
+            <li><i data-i="check"></i><span><b>Commercial net-metering approval</b> with TSSPDCL / TGNPDCL / APSPDCL handled by us</span></li>
+            <li><i data-i="check"></i><span><b>Rugged 3-phase inverters</b> (Solis / Growatt / Sungrow) with remote monitoring</span></li>
+            <li><i data-i="check"></i><span><b>Business hours installation</b> — zero disturbance to your customers</span></li>
+            <li><i data-i="check"></i><span><b>GST invoice</b> — input credit & depreciation guidance for business owners</span></li>
+          </ul>
+          <div class="svc-side">
+            <div class="svc-meta">
+              <span>Size: <b>5 – 25 kW</b></span>
+              <span>From: <b>₹2.6 lakh</b></span>
+              <span>Install: <b>4–7 days</b></span>
+              <span>Payback: <b>2.5–4 yrs</b></span>
+            </div>
+            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20want%20solar%20for%20my%20shop%2Fclinic%2Foffice." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about commercial solar</a>
+          </div>
+        </div></div></div>
+      </article>
+
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="n">c.</span><h3>Apartment common areas</h3>
+          <span class="svc-sum">10–100 kW · societies</span>
+          <span class="go"><i data-i="plus"></i></span>
+        </button>
+        <div class="svc-panel"><div><div class="svc-body">
+          <p>Lifts, motors, corridor lights, pumps and security systems run all day — a huge shared bill for every flat owner. Solar on the apartment terrace cuts that common-area bill sharply, and we manage the entire process with your society committee.</p>
+          <ul class="svc-inc">
+            <li><i data-i="check"></i><span><b>Committee presentation</b> — we explain savings to all members in simple terms</span></li>
+            <li><i data-i="check"></i><span><b>Group housing net metering</b> — 3-phase connection handled end to end</span></li>
+            <li><i data-i="check"></i><span><b>Waterproof, elevated structures</b> — terraces stay usable</span></li>
+            <li><i data-i="check"></i><span><b>Generation reports</b> shared monthly with the association</span></li>
+            <li><i data-i="check"></i><span><b>AMC plans</b> so the society never worries about upkeep</span></li>
+          </ul>
+          <div class="svc-side">
+            <div class="svc-meta">
+              <span>Size: <b>10 – 100 kW</b></span>
+              <span>Price: <b>per survey</b></span>
+              <span>Install: <b>1–3 weeks</b></span>
+              <span>Bills cut: <b>40–70%</b></span>
+            </div>
+            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20Our%20apartment%20society%20wants%20solar%20for%20common%20areas." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about society solar</a>
+          </div>
+        </div></div></div>
+      </article>
+
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="n">d.</span><h3>Farm & motor pumps</h3>
+          <span class="svc-sum">Off-grid · agriculture</span>
+          <span class="go"><i data-i="plus"></i></span>
+        </button>
+        <div class="svc-panel"><div><div class="svc-body">
+          <p>For borewells, drip systems and farm huts where grid power is irregular or absent. A solar pump runs whenever the sun shines — no waiting for supply hours, no diesel cost. We serve farms across both Telangana and AP districts.</p>
+          <ul class="svc-inc">
+            <li><i data-i="check"></i><span><b>DC & AC solar pump sets</b> — 1 HP to 10 HP with controller & complete wiring</span></li>
+            <li><i data-i="check"></i><span><b>Off-grid kits</b> for farm fencing, gates, lights and small huts</span></li>
+            <li><i data-i="check"></i><span><b>PM-KUSUM guidance</b> — we explain current scheme eligibility honestly</span></li>
+            <li><i data-i="check"></i><span><b>Galvanised structures</b> built to survive open-field wind and weather</span></li>
+            <li><i data-i="check"></i><span><b>Village-level service</b> — our team travels to your mandal</span></li>
+          </ul>
+          <div class="svc-side">
+            <div class="svc-meta">
+              <span>Pumps: <b>1 – 10 HP</b></span>
+              <span>From: <b>₹85,000</b></span>
+              <span>Install: <b>2–4 days</b></span>
+              <span>Diesel saved: <b>100%</b></span>
+            </div>
+            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20need%20a%20solar%20pump%20for%20my%20farm." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about solar pumps</a>
+          </div>
+        </div></div></div>
+      </article>
+
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="n">e.</span><h3>Battery & backup systems</h3>
+          <span class="svc-sum">Hybrid / off-grid</span>
+          <span class="go"><i data-i="plus"></i></span>
+        </button>
+        <div class="svc-panel"><div><div class="svc-body">
+          <p>If your area has frequent power cuts — or your home has a lift, medical equipment or work-from-home needs — a hybrid system keeps everything running. Bill savings from solar <b>plus</b> silent backup, replacing that noisy old diesel generator.</p>
+          <ul class="svc-inc">
+            <li><i data-i="check"></i><span><b>Backup-first sizing</b> — we calculate exactly what stays on during a cut</span></li>
+            <li><i data-i="check"></i><span><b>Lithium or tubular batteries</b> — honest advice on which suits your budget</span></li>
+            <li><i data-i="check"></i><span><b>Hybrid inverters</b> (Solis S6 / Microtek PCU / Luminous NXG) with smart priority modes</span></li>
+            <li><i data-i="check"></i><span><b>Automatic changeover</b> — lights don't even flicker when grid fails</span></li>
+            <li><i data-i="check"></i><span><b>Retrofit option</b> — add battery to an existing on-grid system later</span></li>
+          </ul>
+          <div class="svc-side">
+            <div class="svc-meta">
+              <span>Size: <b>1 – 10 kW</b></span>
+              <span>Battery: <b>1.5 – 10 kWh</b></span>
+              <span>Install: <b>2–3 days</b></span>
+              <span>Backup: <b>4–12 hrs</b></span>
+            </div>
+            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20want%20solar%20with%20battery%20backup%20(hybrid)." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about hybrid systems</a>
+          </div>
+        </div></div></div>
+      </article>
+
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false">
+          <span class="n">f.</span><h3>Service, cleaning & AMC</h3>
+          <span class="svc-sum">All brands · even others' work</span>
+          <span class="go"><i data-i="plus"></i></span>
+        </button>
+        <div class="svc-panel"><div><div class="svc-body">
+          <p>Dusty panels lose up to 15% of their output — and in Telangana's dust, that adds up fast. Our annual maintenance plans keep any solar system at full health. Yes, even systems installed by other companies. We also take over pending warranty claims.</p>
+          <ul class="svc-inc">
+            <li><i data-i="check"></i><span><b>Panel cleaning visits</b> — scheduled, with pure-water brushing (no soap film)</span></li>
+            <li><i data-i="check"></i><span><b>Electrical safety audit</b> — connection tightness, earthing and insulation checks</span></li>
+            <li><i data-i="check"></i><span><b>Inverter health report</b> — firmware updates, fault-log review, efficiency check</span></li>
+            <li><i data-i="check"></i><span><b>Generation review</b> — we tell you if your system underperforms and why</span></li>
+            <li><i data-i="check"></i><span><b>Warranty claim handling</b> — we deal with the brand so you don't have to</span></li>
+          </ul>
+          <div class="svc-side">
+            <div class="svc-meta">
+              <span>Plans from: <b>₹2,000/yr</b></span>
+              <span>Visits: <b>2–4 per year</b></span>
+              <span>Response: <b>within 48 hrs</b></span>
+            </div>
+            <a class="svc-wa" href="https://wa.me/919912058832?text=Hi!%20I%20want%20an%20AMC%2Fservice%20plan%20for%20my%20existing%20solar%20system." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask about AMC plans</a>
+          </div>
+        </div></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SYSTEM TYPES ================= -->
+<section class="sec" id="systems">
+  <div class="wrap">
+    <div class="kicker rv"><b>(03) — System types</b><i></i></div>
+    <h2 class="rv">Three kinds of solar. One is <em>right for you.</em></h2>
+    <p class="sec-lead rv">Don't worry about the technical names — the tabs below explain each type in plain language. 9 out of 10 homes we install are simple on-grid systems.</p>
+
+    <div class="tabs rv" role="tablist">
+      <button class="tab active" data-tab="ongrid">On-Grid</button>
+      <button class="tab" data-tab="offgrid">Off-Grid</button>
+      <button class="tab" data-tab="hybrid">Hybrid</button>
+    </div>
+
+    <div class="type-panel show rv" id="tp-ongrid">
+      <div>
+        <h3>On-Grid — the most popular choice</h3>
+        <p class="desc">Your solar is connected to the electricity department's (DISCOM's) grid. Extra daytime power flows to the grid and <b>your meter runs backwards</b> — net metering. At night you use grid power as usual.</p>
+        <ul class="type-list">
+          <li><i data-i="check"></i><span><b>Cheapest option</b> — no battery cost, fastest payback (3–5 years)</span></li>
+          <li><i data-i="check"></i><span><b>Eligible for PM Surya Ghar subsidy</b> up to ₹78,000</span></li>
+          <li><i data-i="check"></i><span>Best when your area has few power cuts</span></li>
+          <li><i data-i="x"></i><span>Doesn't work during power cuts (safety shut-off) — choose Hybrid for that</span></li>
+        </ul>
+      </div>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 210" fill="none" font-family="Archivo">
+          <circle cx="46" cy="34" r="13" fill="var(--amber)" stroke="var(--ink)" stroke-width="1.6"/>
+          <rect x="20" y="96" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="58" y="122" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">PANELS</text>
+          <rect x="142" y="96" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="180" y="117" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">INVERTER</text>
+          <text x="180" y="132" text-anchor="middle" font-size="8" fill="var(--ink3)">DC → AC</text>
+          <rect x="264" y="30" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="56" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">GRID</text>
+          <rect x="264" y="150" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="176" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">YOUR HOME</text>
+          <line x1="96" y1="118" x2="142" y2="118" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="218" y1="104" x2="264" y2="58" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="218" y1="132" x2="264" y2="170" stroke="var(--ink)" stroke-width="1.6"/>
+          <path d="M246 62 l8 -4 -3 9z" fill="var(--ink)"/><path d="M248 158 l-8 4 8 4z" fill="var(--ink)"/>
+          <text x="300" y="96" text-anchor="middle" font-size="8.5" fill="var(--green)">net meter runs backwards</text>
+        </svg>
+        <figcaption>Sun → panels → inverter → your home & the grid</figcaption>
+      </figure>
+    </div>
+
+    <div class="type-panel" id="tp-offgrid">
+      <div>
+        <h3>Off-Grid — full independence</h3>
+        <p class="desc">No grid connection at all. Panels charge a battery bank through a solar PCU, and your home or farm runs from the battery. Perfect for farms, borewells, fencing and places the electricity line hasn't reached.</p>
+        <ul class="type-list">
+          <li><i data-i="check"></i><span><b>Fully self-reliant</b> — works anywhere the sun shines</span></li>
+          <li><i data-i="check"></i><span>Great for agriculture motors, gates, fencing, farm huts</span></li>
+          <li><i data-i="x"></i><span>Battery adds cost and needs replacement every 5–8 years</span></li>
+          <li><i data-i="x"></i><span>Not eligible for the grid-tied PM Surya Ghar subsidy</span></li>
+        </ul>
+      </div>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 210" fill="none" font-family="Archivo">
+          <circle cx="46" cy="34" r="13" fill="var(--amber)" stroke="var(--ink)" stroke-width="1.6"/>
+          <rect x="20" y="96" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="58" y="122" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">PANELS</text>
+          <rect x="142" y="96" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="180" y="117" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">SOLAR PCU</text>
+          <text x="180" y="132" text-anchor="middle" font-size="8" fill="var(--ink3)">charges battery</text>
+          <rect x="264" y="30" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="50" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">BATTERY</text>
+          <text x="302" y="64" text-anchor="middle" font-size="8" fill="var(--ink3)">Lithium / tubular</text>
+          <rect x="264" y="150" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="176" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">YOUR HOME</text>
+          <line x1="96" y1="118" x2="142" y2="118" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="218" y1="118" x2="240" y2="118" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="240" y1="52" x2="240" y2="172" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="240" y1="52" x2="264" y2="52" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="240" y1="172" x2="264" y2="172" stroke="var(--ink)" stroke-width="1.6"/>
+        </svg>
+        <figcaption>Sun → panels → PCU → battery → your home</figcaption>
+      </figure>
+    </div>
+
+    <div class="type-panel" id="tp-hybrid">
+      <div>
+        <h3>Hybrid — grid + battery, best of both</h3>
+        <p class="desc">A hybrid inverter does both jobs: exports extra solar to the grid for bill savings <b>and</b> keeps a battery charged for power cuts. Costs more, but nothing in your house switches off — ever.</p>
+        <ul class="type-list">
+          <li><i data-i="check"></i><span><b>Bill savings + backup during power cuts</b></span></li>
+          <li><i data-i="check"></i><span>Smart presets: battery first, grid first, or export first</span></li>
+          <li><i data-i="check"></i><span>Ideal for homes with lifts, medical equipment, WFH setups</span></li>
+          <li><i data-i="x"></i><span>Highest initial cost — battery sizing should be done carefully</span></li>
+        </ul>
+      </div>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 210" fill="none" font-family="Archivo">
+          <circle cx="46" cy="34" r="13" fill="var(--amber)" stroke="var(--ink)" stroke-width="1.6"/>
+          <rect x="20" y="96" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="58" y="122" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">PANELS</text>
+          <rect x="142" y="88" width="76" height="52" rx="6" fill="var(--fillcell)" stroke="var(--green)" stroke-width="2"/>
+          <text x="180" y="110" text-anchor="middle" font-size="11" fill="var(--green)" font-weight="600">HYBRID</text>
+          <text x="180" y="126" text-anchor="middle" font-size="11" fill="var(--green)" font-weight="600">INVERTER</text>
+          <rect x="264" y="30" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="56" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">GRID</text>
+          <rect x="264" y="90" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="110" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">BATTERY</text>
+          <rect x="264" y="150" width="76" height="44" rx="6" fill="var(--svgfill)" stroke="var(--ink)" stroke-width="1.6"/>
+          <text x="302" y="176" text-anchor="middle" font-size="11" fill="var(--ink)" font-weight="600">YOUR HOME</text>
+          <line x1="96" y1="118" x2="142" y2="116" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="218" y1="102" x2="264" y2="56" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="218" y1="114" x2="264" y2="112" stroke="var(--ink)" stroke-width="1.6"/>
+          <line x1="218" y1="126" x2="264" y2="170" stroke="var(--ink)" stroke-width="1.6"/>
+        </svg>
+        <figcaption>One brain: grid, battery and home, all balanced</figcaption>
+      </figure>
+    </div>
+
+    <div class="compare rv">
+      <div class="tbl-wrap">
+        <table>
+          <tr><th style="width:30%">At a glance</th><th>On-Grid</th><th>Off-Grid</th><th>Hybrid</th></tr>
+          <tr><td>Reduces electricity bill</td><td><i data-i="check" class="yes"></i> Yes, up to 90%</td><td>Not connected to bill</td><td><i data-i="check" class="yes"></i> Yes</td></tr>
+          <tr><td>Runs during power cuts</td><td><i data-i="x" class="no"></i> No</td><td><i data-i="check" class="yes"></i> Yes</td><td><i data-i="check" class="yes"></i> Yes</td></tr>
+          <tr><td>Battery needed</td><td>No</td><td>Yes</td><td>Optional / yes</td></tr>
+          <tr><td>PM Surya Ghar subsidy</td><td><i data-i="check" class="yes"></i> Yes, up to ₹78,000</td><td><i data-i="x" class="no"></i> No</td><td><i data-i="check" class="yes"></i> Yes*</td></tr>
+          <tr><td>Typical cost (3 kW)</td><td>₹1.7 – 1.9 lakh</td><td>₹2.4 – 3 lakh</td><td>₹2.6 – 3.4 lakh</td></tr>
+        </table>
+      </div>
+    </div>
+    <p class="rv" style="font-size:.78rem;color:var(--ink3);margin-top:12px">*Hybrid subsidy applies to the grid-connected component per current MNRE rules — we confirm the latest rules before you pay anything. Costs are honest estimates for Telangana; final quote after free site visit.</p>
+  </div>
+</section>
+
+<!-- ================= BRANDS + PDF ================= -->
+<section class="sec" id="brands">
+  <div class="wrap">
+    <div class="kicker rv"><b>(04) — Brands we trust</b><i></i></div>
+    <h2 class="rv">The panel & inverter brands that work <em>best in Telangana & AP.</em></h2>
+    <p class="sec-lead rv">Open any brand to see its popular products with warranty and honest price bands — and a <b>Download spec sheet (PDF)</b> button right below the product table. Waaree is already open below so you can see exactly how it works.</p>
+
+    <div class="acc rv" id="brandAcc">
+
+      <div class="acc-item open">
+        <button class="acc-head" aria-expanded="true">
+          <span class="bname"><i></i>Waaree</span>
+          <span class="bmeta">Mumbai, India</span><span class="btag">Panels</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">India's largest solar panel maker and a favourite across Telangana & AP. Strong local service network, excellent heat tolerance, and DCR (domestic content) models available so your PM Surya Ghar subsidy is fully safe.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Waaree Aditya WSD-545</td><td class="num">545 Wp</td><td>Mono PERC Half-Cut</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Waaree Aditya 530 DCR</td><td class="num">530 Wp</td><td>DCR — subsidy eligible</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Waaree 550 Bifacial</td><td class="num">550 Wp</td><td>Mono PERC Bifacial</td><td>12 yr / 30 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹22 – 24 / watt</b></div>
+            <button class="pdf-btn" data-brand="waaree"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF file with the full table above + our pairing advice — works offline, free to share.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Microtek inverters for homes, or Growatt for net-metering setups — our most-installed home combination.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Hyderabad, Warangal, Vijayawada, Kurnool</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Waaree%20panels%20for%20my%20rooftop." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Waaree price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Adani Solar</span>
+          <span class="bmeta">Ahmedabad, India</span><span class="btag">Panels</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">A fully integrated Indian manufacturer (sand to panel at Mundra). Known for tight quality control and strong output through high-temperature Indian summers — a common sight on shops and commercial roofs in both states.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Adani Apex 540</td><td class="num">540 Wp</td><td>Mono PERC Half-Cut</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Adani Apex Bifacial 575</td><td class="num">575 Wp</td><td>Bifacial Dual Glass</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Adani ELITE 620</td><td class="num">620 Wp</td><td>Large-format Mono PERC</td><td>12 yr / 30 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹23 – 25 / watt</b></div>
+            <button class="pdf-btn" data-brand="adani"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Solis or Growatt inverters for 5–10 kW homes, shops and clinics.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Hyderabad (commercial), Vijayawada, Anantapur</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Adani%20Solar%20panels." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Adani price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Emmvee</span>
+          <span class="bmeta">Bengaluru, India · since 1992</span><span class="btag">Panels</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">Three decades of manufacturing from Karnataka. Emmvee modules offer some of the best value-per-rupee right now, with new N-Type TOPCon lines bringing top efficiency at a friendly price — popular with budget-conscious families.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Emmvee 545 Mono PERC</td><td class="num">545 Wp</td><td>Mono PERC Half-Cut</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Emmvee 540 DCR</td><td class="num">540 Wp</td><td>DCR — subsidy eligible</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Emmvee N-Type TOPCon 550</td><td class="num">550 Wp</td><td>N-Type TOPCon</td><td>12 yr / 30 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹21 – 23 / watt</b></div>
+            <button class="pdf-btn" data-brand="emmvee"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Luminous or Microtek inverters — reliable and easy on the pocket.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Hyderabad suburbs, Nizamabad, Guntur</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Emmvee%20panels." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Emmvee price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Microtek</span>
+          <span class="bmeta">Pune, India</span><span class="btag">Inverter</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">Possibly the most trusted inverter name in Telangana households — the same company families have used for home UPS for years. Their on-grid MPPT inverters are simple and tough, their solar PCUs are the go-to for battery homes, and service centres are everywhere.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Microtek MSUN 1 kW</td><td class="num">1 kW</td><td>On-grid, MPPT, Wi-Fi ready</td><td>Up to 5 yr</td></tr>
+              <tr><td>Microtek MSUN 3 / 5 kW</td><td class="num">3–5 kW</td><td>On-grid, dual MPPT</td><td>Up to 5 yr</td></tr>
+              <tr><td>Microtek Solar PCU 1035/2035</td><td class="num">1–2 kVA</td><td>Off-grid with battery</td><td>2 yr</td></tr>
+              <tr><td>Microtek Hybrid PCU</td><td class="num">5 kVA</td><td>Grid + battery hybrid</td><td>2 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹28,000 – 35,000 / kW</b></div>
+            <button class="pdf-btn" data-brand="microtek"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Waaree or Emmvee panels — the classic Telangana combo. We stock spares locally for fast service.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Hyderabad, Karimnagar, Nalgonda, Khammam</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Microtek%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Microtek price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Luminous</span>
+          <span class="bmeta">Gurugram, India</span><span class="btag">Inverter</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">India's biggest home-power brand with arguably the widest service network in the country. The NXG solar PCU is the first choice for homes that want battery backup at a sensible price, and the Nxi series handles grid-tie cleanly.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Luminous Nxi 310</td><td class="num">1–5 kW</td><td>On-grid grid-tie</td><td>5 yr</td></tr>
+              <tr><td>Luminous NXG 1400</td><td class="num">~1.1 kVA</td><td>Solar PCU, battery</td><td>2 yr</td></tr>
+              <tr><td>Luminous NXG Plus 1850</td><td class="num">~1.5 kVA</td><td>Solar PCU, battery</td><td>2 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹26,000 – 34,000 / kW</b></div>
+            <button class="pdf-btn" data-brand="luminous"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Any 545 Wp panel we install. Best for homes wanting backup first, bill savings second.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Secunderabad, Warangal, Tirupati, Eluru</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Luminous%20solar%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Luminous price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Growatt</span>
+          <span class="bmeta">Global top-5 inverter maker</span><span class="btag">Inverter</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">A world top-5 inverter brand with a strong India base. Excellent MPPT efficiency, a genuinely good monitoring app, and sleek lightweight units. Our preferred choice for larger net-metering homes and shops where every unit counts.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Growatt MIC TL-X</td><td class="num">1–3 kW</td><td>On-grid, 2 MPPT, Wi-Fi</td><td>Up to 10 yr</td></tr>
+              <tr><td>Growatt MIN TL-X</td><td class="num">3–6 kW</td><td>On-grid, dual MPPT</td><td>Up to 10 yr</td></tr>
+              <tr><td>Growatt MOD/MAX 3P</td><td class="num">10 kW+</td><td>3-phase commercial</td><td>Up to 10 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹30,000 – 38,000 / kW</b></div>
+            <button class="pdf-btn" data-brand="growatt"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Our preferred match with Adani and Waaree panels for 3–10 kW net-metering systems.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Hyderabad (villas & shops), Vijayawada, Nellore</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Growatt%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Growatt price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Solis</span>
+          <span class="bmeta">Global · strong India presence</span><span class="btag">Inverter</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">Specialist grid-tie inverter maker with a 10-year standard warranty in India and MPPT efficiency that holds up in real Telangana summers. A workhorse for apartments, clinics and small industry across both states.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Solis S6 1P</td><td class="num">2–6 kW</td><td>Single-phase on-grid</td><td>10 yr</td></tr>
+              <tr><td>Solis 3P</td><td class="num">5–20 kW</td><td>Three-phase on-grid</td><td>10 yr</td></tr>
+              <tr><td>Solis S6 Hybrid</td><td class="num">3–6 kW</td><td>Hybrid with battery</td><td>10 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>₹29,000 – 36,000 / kW</b></div>
+            <button class="pdf-btn" data-brand="solis"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Our go-to for 5–25 kW three-phase jobs — apartments and commercial roofs in AP & TG.</div>
+            <div class="pair-line greenline"><b>Popular in:</b> Hyderabad apartments, Guntur, Rajahmundry</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20the%20latest%20price%20of%20Solis%20inverters." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask Solis price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" aria-expanded="false">
+          <span class="bname"><i></i>Also available</span>
+          <span class="bmeta">Tata · Vikram · Sungrow · Havells</span><span class="btag">On order</span>
+          <span class="chev"><i data-i="chevron-down"></i></span>
+        </button>
+        <div class="acc-panel"><div><div class="acc-body">
+          <div>
+            <p class="bdesc">Beyond our regular stock we regularly arrange Tata Power Solar and Vikram Solar panels (premium Indian brands), Sungrow inverters (excellent for bigger commercial plants) and Havells solar solutions. Tell us your preference — we'll quote it honestly with the same warranty support.</p>
+            <div class="tbl-wrap"><table class="btable">
+              <tr><th>Model</th><th>Size</th><th>Type</th><th>Warranty</th></tr>
+              <tr><td>Tata Power Solar 540–560</td><td class="num">540+ Wp</td><td>Mono PERC Half-Cut</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Vikram Solar Somera 545</td><td class="num">545 Wp</td><td>Mono PERC Half-Cut</td><td>12 yr / 30 yr</td></tr>
+              <tr><td>Sungrow SG 3–10 KT</td><td class="num">3–10 kW</td><td>On-grid inverter</td><td>10 yr</td></tr>
+            </table></div>
+            <div class="price-band"><span>Indicative market band</span><b>Quoted on request</b></div>
+            <button class="pdf-btn" data-brand="others"><i data-i="file-down"></i>Download spec sheet (PDF)</button>
+            <span class="pdf-note">Genuine PDF with the full table above + our pairing advice.</span>
+          </div>
+          <div>
+            <div class="pair-line"><b>Pairs with:</b> Tell us the brand — we'll pair it with the right inverter and confirm ALMM listing for subsidy.</div>
+            <div class="pair-line greenline"><b>Available in:</b> All served districts of Telangana & AP</div>
+            <a class="pdf-btn" style="background:var(--fillcell);border-color:var(--gline2);box-shadow:none" href="https://wa.me/919912058832?text=Hi!%20I%20want%20a%20quote%20for%20Tata%2FVikram%2FSungrow%20products." target="_blank" rel="noopener"><i data-i="message-circle"></i>Ask price on WhatsApp</a>
+          </div>
+        </div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process">
+  <div class="wrap two-col">
+    <div class="sticky-col rv">
+      <div class="kicker"><b>(05) — How it works</b><i></i></div>
+      <h2>From your first call to <em>25 years</em> of free power.</h2>
+      <p class="sec-lead">Six simple steps. You only make one phone call — we do the running around for documents, DISCOM approvals and subsidy.</p>
+      <div class="docs-card">
+        <h4>What you keep ready (Step 2)</h4>
+        <p>Just photographs or photocopies — nothing original. That's the only "paperwork" on your side.</p>
+        <div class="doc-chips">
+          <span><i data-i="credit-card"></i>Aadhaar card</span>
+          <span><i data-i="receipt"></i>Latest current bill</span>
+          <span><i data-i="file-text"></i>Property tax receipt</span>
+          <span><i data-i="landmark"></i>Bank passbook copy</span>
+          <span><i data-i="image"></i>One passport photo</span>
+        </div>
+      </div>
+      <a class="call-mini" href="tel:+919912058832"><i data-i="phone-call"></i>Start Step 1 now: 99120 58832</a>
+    </div>
+
+    <div class="tl" id="timeline">
+      <div class="tl-fill" id="tlFill"></div>
+      <div class="tl-step rv"><div class="tl-node num">1</div>
+        <h3>Free site visit & discussion <small>Day 1</small></h3>
+        <p>Call or WhatsApp us. Our engineer visits your home, checks roof size, direction of sunlight and your electricity usage pattern — and answers every question in simple language. Completely free, no obligation.</p>
+      </div>
+      <div class="tl-step rv"><div class="tl-node num">2</div>
+        <h3>Documents & DISCOM approval <small>Week 1–2</small></h3>
+        <p>Step 2 begins with receiving your documents — Aadhaar, latest electricity bill, property tax receipt, bank passbook and one photo. We then apply to your DISCOM (TSSPDCL / TGNPDCL / APSPDCL) for net metering and file the PM Surya Ghar subsidy application on your behalf. You don't visit any office.</p>
+      </div>
+      <div class="tl-step rv"><div class="tl-node num">3</div>
+        <h3>Design & written quotation <small>Week 2</small></h3>
+        <p>We prepare your system design — panel count, roof layout, inverter brand, cable routes — and give a written quote with brands, warranties and prices clearly listed. No hidden charges. You approve before anything is ordered.</p>
+      </div>
+      <div class="tl-step rv"><div class="tl-node num">4</div>
+        <h3>Installation <small>2 – 3 days</small></h3>
+        <p>Our team installs the elevated structure, panels, inverter and safe earthing & wiring. Most homes finish in 2–3 days with zero damage to your roof or rooms. Old wiring is checked and corrected where needed.</p>
+      </div>
+      <div class="tl-step rv"><div class="tl-node num">5</div>
+        <h3>Testing & net meter <small>Week 3–4</small></h3>
+        <p>We test the full system, DISCOM officials inspect and install your new bidirectional net meter, and your solar officially goes live. We sit with you and set up the mobile monitoring app, showing exactly how much power you're making.</p>
+      </div>
+      <div class="tl-step rv"><div class="tl-node num">6</div>
+        <h3>Maintenance & lifetime support <small>25 years</small></h3>
+        <p>Solar needs very little care — mainly keeping panels clean. We teach you how, offer optional yearly AMC visits, monitor inverter health, and handle all warranty claims with the brands. One call, 25 years, we stay responsible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COVERAGE ================= -->
+<section class="sec" id="coverage">
+  <div class="wrap">
+    <div class="kicker rv"><b>(06) — Where we work</b><i></i></div>
+    <h2 class="rv">Serving <em>two states,</em> door to door.</h2>
+    <div class="cov-grid rv">
+      <div class="cov-col">
+        <span>Telangana</span>
+        <h3>Our home state</h3>
+        <div class="cov-list">Hyderabad <i>·</i> Secunderabad <i>·</i> Sangareddy <i>·</i> Medchal <i>·</i> Nizamabad <i>·</i> Karimnagar <i>·</i> Warangal <i>·</i> Khammam <i>·</i> Mahabubnagar <i>·</i> Nalgonda</div>
+      </div>
+      <div class="cov-col">
+        <span>Andhra Pradesh</span>
+        <h3>Our second home</h3>
+        <div class="cov-list">Vijayawada <i>·</i> Guntur <i>·</i> Kurnool <i>·</i> Anantapur <i>·</i> Tirupati <i>·</i> Nellore <i>·</i> Eluru <i>·</i> Ongole <i>·</i> Rajahmundry <i>·</i> Kadapa</div>
+      </div>
+    </div>
+    <p class="cov-foot rv"><i data-i="map-pin"></i> Don't see your town? If the sun reaches you, we do too. <a href="tel:+919912058832">Call and ask →</a></p>
+  </div>
+</section>
+
+<!-- ================= CALCULATOR ================= -->
+<section class="sec" id="calculator">
+  <div class="wrap">
+    <div class="kicker rv"><b>(07) — Try it yourself</b><i></i></div>
+    <h2 class="rv">How much would <em>you</em> save? Move the slider.</h2>
+    <p class="sec-lead rv">Tell us your average monthly electricity bill and see an honest, instant estimate for a Telangana rooftop.</p>
+    <div class="rv" style="margin-top:38px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid var(--gborder);border-radius:22px;padding:clamp(20px,3.4vw,38px);box-shadow:var(--gshadow),var(--glow)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px">
+        <label for="billSlider" style="font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)">My monthly current bill</label>
+        <output for="billSlider" id="billOut" style="font-family:var(--serif);font-size:1.6rem;font-weight:600">₹3,000</output>
+      </div>
+      <input type="range" id="billSlider" min="1000" max="15000" step="500" value="3000" style="width:100%;margin:14px 0 4px;accent-color:var(--green);height:26px;cursor:pointer">
+      <div class="num" style="display:flex;justify-content:space-between;font-size:.7rem;color:var(--ink3);font-weight:600"><span>₹1,000</span><span>₹8,000</span><span>₹15,000</span></div>
+      <div class="calc-grid num" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gborder);border:1px solid var(--gborder);border-radius:16px;overflow:hidden;margin-top:24px">
+        <div style="background:var(--fillcell);padding:20px"><b id="rSize" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;color:var(--green);display:block">3 kW</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Recommended system</span></div>
+        <div style="background:var(--fillcell);padding:20px"><b id="rSave" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">₹2,700</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Saved every month</span></div>
+        <div style="background:var(--fillcell);padding:20px"><b id="rCost" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">₹1.0 L</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Cost after subsidy</span></div>
+        <div style="background:var(--fillcell);padding:20px"><b id="rPay" style="font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:600;display:block">3.1 yrs</b><span style="font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:600">Payback period</span></div>
+      </div>
+      <p class="num" id="rExtra" style="margin-top:16px;font-size:.88rem;color:var(--ink2)"></p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:20px;align-items:center">
+        <button class="btn amber" id="quoteWa"><i data-i="message-circle"></i>Send this on WhatsApp for an exact quote</button>
+        <span style="font-size:.74rem;color:var(--ink3)">*Estimates only. Roof needed here: <b class="num" id="rRoof" style="color:var(--ink)">~270 sq.ft</b>. Final numbers after free survey.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap two-col">
+    <div class="rv">
+      <div class="kicker"><b>(08) — Common questions</b><i></i></div>
+      <h2>Asked by every family. <em>Answered simply.</em></h2>
+      <p class="sec-lead">If your question isn't here, just call <b><a href="tel:+919912058832" style="text-decoration:none">99120 58832</a></b> — we'd rather talk for ten minutes than have you guess.</p>
+    </div>
+    <div class="rv" style="transition-delay:.1s">
+
+      <div class="faq-item open">
+        <button class="faq-head">What is "net metering", in simple words?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Your new meter counts in both directions. When your panels make extra power (usually afternoon), it flows to the grid and the meter counts <b>backwards</b>. At night you use grid power and it counts forward. At month-end you pay only for the <b>difference</b> — which is usually almost zero.</p>
+          <p>And it gets better: the extra units you export are kept as <b>credit in your account</b> (called "banking"), so sunny months help pay for cloudy months. In Telangana and AP, these banked units are typically carried forward for up to a financial year as per DISCOM rules.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">How much subsidy will I get from the government?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Under the <b>PM Surya Ghar: Muft Bijli Yojana</b> for residential on-grid systems:</p>
+          <table class="num">
+            <tr><th>System size</th><th>Subsidy</th></tr>
+            <tr><td>1 kW</td><td>₹30,000</td></tr>
+            <tr><td>2 kW</td><td>₹60,000</td></tr>
+            <tr><td>3 kW or more</td><td>₹78,000 (maximum)</td></tr>
+          </table>
+          <p>The subsidy is credited <b>directly to your bank account</b> after inspection and commissioning — usually within about 30 days. We register your application on the national portal, upload documents, track approvals and follow up till the money lands. You never pay us anything for this service.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">Will solar run my house during a power cut?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>A normal <b>on-grid system switches off during cuts</b> — this is a safety rule that protects electricity line-men working on the pole near you. The panels are fine; the system just pauses.</p>
+          <p>If cuts are common in your area, we recommend a <b>hybrid system</b>: it keeps a battery charged and powers your fans, lights, TV, router and even fridge while the grid is down — with automatic changeover so fast the lights barely flicker. In our experience, most families only need 1.5–3 kWh of battery for comfortable evening backup.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">Does it work on cloudy and rainy days?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Yes, at reduced output — typically <b>50–80% of normal on cloudy days</b> and 20–40% during heavy monsoon rain. Modern Mono PERC and TOPCon panels are quite good at harvesting diffuse light.</p>
+          <p>The good news: Telangana and AP get <b>300+ sunny days a year</b>, so yearly generation stays strong. Your net-metering "bank" of extra units from the sunny months covers the monsoon shortfall — which is exactly why we size systems on your <b>annual</b> usage, not any single month.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">How much roof area do I need?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Roughly <b>80–100 sq.ft per kW</b> of shadow-free roof. So a 3 kW system needs about 270–300 sq.ft — a typical portion of any independent-house terrace. South-facing space is best, but east and west also work well in our latitude.</p>
+          <p>During the free survey we do a proper <b>shadow analysis</b> — checking water tanks, parapet walls, stair-head rooms and nearby trees across the day. We install elevated structures (7–8 ft high), so you keep using the terrace below for drying clothes, tanks or a small garden.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">What maintenance does solar need?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Very little — and none of it is technical:</p>
+          <ul>
+            <li><i data-i="droplet"></i><span><b>Clean the panels</b> with plain water every 1–2 weeks (early morning or evening, never hot midday glass). Dust is Telangana's biggest thief — a clean panel makes up to 15% more power.</span></li>
+            <li><i data-i="activity"></i><span><b>Glance at the app</b> once a week — if today's units look much lower than usual, call us.</span></li>
+            <li><i data-i="wrench"></i><span><b>One yearly check</b> of connections, earthing and inverter health — covered in our AMC plan from ₹2,000/year.</span></li>
+          </ul>
+          <p>There are no moving parts to wear out. Panels carry 25–30 year performance warranties — the "maintenance" is mostly just keeping them clean.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">What warranties do I get, and who honours them?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>You get written warranty cards for every component, in your name:</p>
+          <ul>
+            <li><i data-i="shield-check"></i><span><b>Panels:</b> 12-year product warranty + 30-year performance warranty (they still make ~85% output in year 30)</span></li>
+            <li><i data-i="zap"></i><span><b>Inverter:</b> 5 years (Microtek/Luminous) up to 10 years (Solis/Growatt)</span></li>
+            <li><i data-i="grid-2x2"></i><span><b>Mounting structure:</b> 5 years against rust and structural failure</span></li>
+            <li><i data-i="hard-hat"></i><span><b>Workmanship:</b> 5 years from us — roof leaks from our drilling, loose wiring, anything installation-related</span></li>
+          </ul>
+          <p>If anything fails, one call to us and <b>we handle the claim with the brand</b> — you never chase a service centre.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">How long does the whole process take, start to finish?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Typically <b>3–5 weeks</b> from your first call to solar flowing through your new meter:</p>
+          <ul>
+            <li><i data-i="calendar"></i><span><b>Days 1–2:</b> site visit and design</span></li>
+            <li><i data-i="file-check"></i><span><b>Weeks 1–2:</b> documents, DISCOM application, subsidy registration</span></li>
+            <li><i data-i="hard-hat"></i><span><b>2–3 days of work:</b> installation, once approvals arrive</span></li>
+            <li><i data-i="plug"></i><span><b>Week 3–5:</b> inspection, net-meter installation, go-live</span></li>
+          </ul>
+          <p>The DISCOM approval timeline is the one part we can't speed up — but because we file everything correctly the first time, rejections and delays are rare. We keep you updated at every step on WhatsApp.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">Can I pay in installments or get a loan?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>Yes — and for many families this makes solar cash-flow positive from month one:</p>
+          <ul>
+            <li><i data-i="landmark"></i><span><b>Bank loans:</b> several banks offer collateral-free rooftop solar loans around 7% interest under the PM Surya Ghar framework — your EMI is often <b>less than the bill you're saving</b>.</span></li>
+            <li><i data-i="rupee-note"></i><span><b>Stage-wise payment:</b> we collect an advance, a payment after material delivery, and the balance only after commissioning. Never the full amount upfront.</span></li>
+            <li><i data-i="coins"></i><span><b>Subsidy offset:</b> remember ₹30,000–78,000 comes back to your account, shrinking the real cost further.</span></li>
+          </ul>
+          <p>We'll explain the paperwork and connect you with the right bank branch during your site visit.</p>
+        </div></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-head">Which brand should I choose — Waaree, Adani, Emmvee or Microtek?<i data-i="plus"></i></button>
+        <div class="faq-panel"><div><div class="faq-body">
+          <p>All four are excellent and proven in our climate — we're not tied to any single brand, so our advice is honest:</p>
+          <p>For <b>panels</b>, decide by warranty and local service presence: Waaree and Emmvee are our most-installed for homes, Adani for larger and commercial roofs. For the <b>inverter</b>, decide by your need: Microtek for dependable simple home systems, Growatt/Solis when you want best-in-class monitoring for net metering.</p>
+          <p>Download the spec sheets in the Brands section above, and at the site visit we'll show you <b>2–3 combinations</b> with transparent pricing — then the choice is yours. The best brand is ultimately the one whose service reaches your town fastest, and we know exactly which that is for your area.</p>
+        </div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="kicker rv"><b>(09) — Talk to us</b><i></i></div>
+    <h2 class="rv">One call today, <em>zero bill</em> in a few weeks.</h2>
+    <div class="contact-grid">
+      <form class="cform rv" id="quoteForm" novalidate>
+        <h3>Request a free quote</h3>
+        <p>Fill this and it opens WhatsApp with your details ready — or just call us directly.</p>
+        <div class="f2">
+          <div class="fld" id="fName"><label for="qName">Your name</label><input id="qName" type="text" placeholder="e.g. Ramesh Reddy" autocomplete="name"></div>
+          <div class="fld" id="fPhone"><label for="qPhone">Phone number</label><input id="qPhone" type="tel" placeholder="10-digit mobile" autocomplete="tel" maxlength="10" inputmode="numeric"></div>
+        </div>
+        <div class="f2">
+          <div class="fld"><label for="qCity">Village / City</label><input id="qCity" type="text" placeholder="e.g. Kukatpally, Hyderabad"></div>
+          <div class="fld"><label for="qBill">Monthly current bill</label>
+            <select id="qBill"><option>Below ₹1,500</option><option selected>₹1,500 – ₹3,000</option><option>₹3,000 – ₹6,000</option><option>Above ₹6,000</option></select>
+          </div>
+        </div>
+        <div class="fld"><label for="qMsg">Anything we should know? (optional)</label><textarea id="qMsg" rows="3" placeholder="e.g. South-facing terrace, 2 power cuts a week…"></textarea></div>
+        <button type="submit" class="btn amber" style="width:100%;justify-content:center"><i data-i="send"></i>Send on WhatsApp</button>
+        <p style="text-align:center;font-size:.76rem;color:var(--ink3);margin-top:12px">We reply within working hours · Mon–Sat 9:30 AM – 7:30 PM</p>
+      </form>
+
+      <div class="rv" style="transition-delay:.1s">
+        <div class="cinfo-card">
+          <div class="cinfo-row"><span class="ic"><i data-i="map-pin"></i></span><div><b>Visit our office</b>Shop No. 303, Comfort Homes 1,<br>Kaithalapur, Hyderabad — 500018</div></div>
+          <div class="cinfo-row"><span class="ic"><i data-i="phone"></i></span><div><b>Call / WhatsApp</b><a href="tel:+919912058832">+91 99120 58832</a></div></div>
+          <div class="cinfo-row"><span class="ic"><i data-i="clock"></i></span><div><b>Working hours</b>Monday – Saturday · 9:30 AM – 7:30 PM</div></div>
+        </div>
+        <div class="map-frame">
+          <iframe title="Gayatri Green Energy location map — Kaithalapur, Hyderabad 500018" loading="lazy"
+            src="https://maps.google.com/maps?q=Comfort%20Homes%201%2C%20Kaithalapur%2C%20Hyderabad%20500018&t=m&z=16&output=embed&iwloc=near"></iframe>
+          <div class="map-overlay">
+            <b>Gayatri Green Energy</b>
+            <span style="font-size:.76rem;color:var(--ink2)">Kaithalapur, Hyderabad 500018</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Comfort+Homes+1,+Kaithalapur,+Hyderabad+500018" target="_blank" rel="noopener"><i data-i="navigation"></i>Get directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="brand-name" style="font-size:1.35rem">Gayatri <em style="color:var(--green)">Green</em> Energy</span>
+        <p style="font-size:.88rem;color:var(--ink2);margin-top:12px;max-width:30ch">Rooftop solar specialists for homes, shops & farms across Telangana and Andhra Pradesh. Honest advice, branded equipment, lifetime support.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">About us</a></li><li><a href="#services">Services</a></li>
+          <li><a href="#systems">System types</a></li><li><a href="#brands">Brands & spec sheets</a></li>
+          <li><a href="#process">Installation process</a></li><li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <a class="foot-tel" href="tel:+919912058832">99120 58832</a>
+        <p style="font-size:.85rem;color:var(--ink2);margin-top:10px">Shop No. 303, Comfort Homes 1,<br>Kaithalapur, Hyderabad — 500018</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Gayatri Green Energy. All rights reserved.</span>
+      <span>Made with sunlight in Hyderabad</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+919912058832" aria-label="Call Gayatri Green Energy"><i data-i="phone"></i></a>
+<div id="toasts"></div>
+
+<script>
+(function(){
+"use strict";
+if(!NodeList.prototype.forEach){ NodeList.prototype.forEach = Array.prototype.forEach; }
+
+function $(s,c){ return (c||document).querySelector(s); }
+function $$(s,c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); }
+function safe(fn){ try{ fn(); }catch(e){} }
+
+/* ============ 0. THEME TOGGLE (dark / light) ============ */
+safe(function(){
+  var root = document.documentElement;
+  var meta = document.querySelector('meta[name="theme-color"]');
+  function label(t){
+    $$('.theme-btn .tlabel').forEach(function(l){ l.textContent = (t==='dark') ? 'Light' : 'Dark'; });
+  }
+  function apply(t){
+    root.setAttribute('data-theme', t);
+    if(meta) meta.setAttribute('content', t==='dark' ? '#12241B' : '#FDF3DC');
+    label(t);
+    try{ localStorage.setItem('gge-theme', t); }catch(e){}
+  }
+  label(root.getAttribute('data-theme'));
+  $$('.theme-btn').forEach(function(b){
+    b.addEventListener('click', function(){
+      apply(root.getAttribute('data-theme')==='dark' ? 'light' : 'dark');
+    });
+  });
+  if(window.matchMedia){
+    var mq = matchMedia('(prefers-color-scheme: dark)');
+    var onChange = function(e){
+      var chosen = null;
+      try{ chosen = localStorage.getItem('gge-theme'); }catch(err){}
+      if(!chosen) apply(e.matches ? 'dark' : 'light');
+    };
+    if(mq.addEventListener) mq.addEventListener('change', onChange);
+    else if(mq.addListener) mq.addListener(onChange);
+  }
+});
+
+/* ============ 1. ICONS — built-in SVG library ============ */
+var ICONS={
+phone:'<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>',
+'phone-call':'<path d="M15 2a9 9 0 0 1 7 7"/><path d="M15 6a5 5 0 0 1 3 3"/><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>',
+menu:'<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
+x:'<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+check:'<path d="M20 6 9 17l-5-5"/>',
+plus:'<path d="M5 12h14"/><path d="M12 5v14"/>',
+'chevron-down':'<path d="m6 9 6 6 6-6"/>',
+'arrow-right':'<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+'map-pin':'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+'message-circle':'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
+send:'<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>',
+navigation:'<path d="m3 11 19-9-9 19-2-8-8-2z"/>',
+sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/>',
+moon:'<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>',
+clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+'file-down':'<path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="M12 10v6"/><path d="m9 13 3 3 3-3"/>',
+'file-text':'<path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="M8 13h6"/><path d="M8 17h6"/>',
+'file-check':'<path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="m9 15 2 2 4-4"/>',
+'credit-card':'<rect width="20" height="14" x="2" y="5" rx="2"/><path d="M6 10h4"/><path d="M6 14h8"/>',
+receipt:'<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/>',
+landmark:'<line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><path d="m12 2 9 5H3z"/>',
+image:'<rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4.3-4.3a1.5 1.5 0 0 0-2.1 0L6 19"/>',
+droplet:'<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>',
+activity:'<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+wrench:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.7z"/>',
+'shield-check':'<path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1 1 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+zap:'<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+'grid-2x2':'<rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/><path d="M3 12h18"/>',
+'hard-hat':'<path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z"/><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><path d="M14 6a6 6 0 0 1 6 6v3"/>',
+calendar:'<rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="m9 16 2 2 4-4"/>',
+plug:'<path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8z"/>',
+'badge-rupee':'<circle cx="12" cy="12" r="10"/><path d="M9 7h6"/><path d="M9 11h6"/><path d="M9 7c4 0 5.5 1.5 5.5 4S13 15 9 15l6 4"/>',
+'rupee-note':'<rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01"/><path d="M18 12h.01"/>',
+coins:'<circle cx="8" cy="8" r="6"/><circle cx="16" cy="16" r="6"/>',
+alert:'<circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/>',
+loader:'<path d="M21 12a9 9 0 1 1-6.2-8.6"/>'
+};
+function injectIcons(root){
+  $$('i[data-i]', root).forEach(function(el){
+    var d = ICONS[el.getAttribute('data-i')]; if(!d) return;
+    var s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+    s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','lucide');
+    s.setAttribute('fill','none'); s.setAttribute('stroke','currentColor');
+    s.setAttribute('stroke-width','1.8'); s.setAttribute('stroke-linecap','round');
+    s.setAttribute('stroke-linejoin','round'); s.setAttribute('aria-hidden','true');
+    s.innerHTML = d; el.parentNode.replaceChild(s, el);
+  });
+}
+safe(function(){ injectIcons(document); });
+
+/* ============ 2. TOAST ============ */
+function toast(msg, icon, linkHTML){
+  var box = $('#toasts'); if(!box) return;
+  var t = document.createElement('div');
+  t.className = 'toast';
+  t.innerHTML = '<i data-i="'+(icon||'sun')+'"></i><span>'+msg+'</span>'+(linkHTML||'');
+  box.appendChild(t);
+  injectIcons(t);
+  setTimeout(function(){ t.style.transition='opacity .4s'; t.style.opacity='0'; setTimeout(function(){ if(t.parentNode) t.parentNode.removeChild(t); },400); }, 8000);
+}
+
+/* ============ 3. ACCORDIONS (delegated, with PDF interception) ============ */
+function toggleItem(item, exclusive){
+  if(!item) return;
+  var list = item.parentNode;
+  var was = item.classList.contains('open');
+  if(exclusive){
+    $$('.open', list).forEach(function(s){
+      s.classList.remove('open');
+      var h = s.querySelector('button'); if(h) h.setAttribute('aria-expanded','false');
+    });
+  }
+  if(!was){
+    item.classList.add('open');
+    var hd = item.querySelector('button'); if(hd) hd.setAttribute('aria-expanded','true');
+  }
+}
+document.addEventListener('click', function(e){
+  var t = e.target;
+  if(!t || !t.closest) return;
+  var pb = t.closest('.pdf-btn[data-brand]');
+  if(pb){
+    if(pb.getAttribute('data-busy')) return;
+    pb.setAttribute('data-busy','1');
+    var old = pb.innerHTML;
+    pb.innerHTML = '<i data-i="loader"></i>Preparing PDF\u2026';
+    injectIcons(pb);
+    safe(function(){ makePDF(pb.getAttribute('data-brand')); });
+    setTimeout(function(){
+      pb.innerHTML = old; injectIcons(pb); pb.removeAttribute('data-busy');
+    }, 700);
+    return;
+  }
+  var ah = t.closest('.acc-head');
+  if(ah){ toggleItem(ah.parentNode, true); return; }
+  var sh = t.closest('.svc-head');
+  if(sh){ toggleItem(sh.parentNode, true); return; }
+  var fh = t.closest('.faq-head');
+  if(fh){ toggleItem(fh.parentNode, true); return; }
+});
+
+/* ============ 4. BRAND DATA ============ */
+var BRANDS={
+waaree:{name:'Waaree',cat:'Solar Panels',origin:'Mumbai, India',price:'Rs. 22 - 24 per watt',
+ desc:"India's largest solar panel maker and a favourite across Telangana and AP. Strong local service network, excellent heat tolerance, and DCR (domestic content) models available so the PM Surya Ghar subsidy is fully safe.",
+ pair:'Pairs with Microtek inverters for homes, or Growatt for net-metering setups - our most-installed home combination. Popular in Hyderabad, Warangal, Vijayawada and Kurnool.',
+ rows:[['Waaree Aditya WSD-545','545 Wp','Mono PERC Half-Cut','12 yr / 30 yr'],['Waaree Aditya 530 DCR','530 Wp','DCR - subsidy eligible','12 yr / 30 yr'],['Waaree 550 Bifacial','550 Wp','Mono PERC Bifacial','12 yr / 30 yr']]},
+adani:{name:'Adani Solar',cat:'Solar Panels',origin:'Ahmedabad, India',price:'Rs. 23 - 25 per watt',
+ desc:"A fully integrated Indian manufacturer (sand to panel at Mundra). Known for tight quality control and strong output through high-temperature Indian summers - a common sight on shops and commercial roofs in both states.",
+ pair:'Pairs with Solis or Growatt inverters for 5-10 kW homes, shops and clinics. Popular in Hyderabad (commercial), Vijayawada and Anantapur.',
+ rows:[['Adani Apex 540','540 Wp','Mono PERC Half-Cut','12 yr / 30 yr'],['Adani Apex Bifacial 575','575 Wp','Bifacial Dual Glass','12 yr / 30 yr'],['Adani ELITE 620','620 Wp','Large-format Mono PERC','12 yr / 30 yr']]},
+emmvee:{name:'Emmvee',cat:'Solar Panels',origin:'Bengaluru, India (since 1992)',price:'Rs. 21 - 23 per watt',
+ desc:"Three decades of manufacturing from Karnataka. Emmvee modules offer some of the best value-per-rupee in the market right now, with newer N-Type TOPCon lines bringing top efficiency at a friendly price.",
+ pair:'Classic pairing: Emmvee panels + Luminous or Microtek inverter - reliable and easy on the pocket. Popular in Hyderabad suburbs, Nizamabad and Guntur.',
+ rows:[['Emmvee 545 Mono PERC','545 Wp','Mono PERC Half-Cut','12 yr / 30 yr'],['Emmvee 540 DCR','540 Wp','DCR - subsidy eligible','12 yr / 30 yr'],['Emmvee N-Type TOPCon 550','550 Wp','N-Type TOPCon','12 yr / 30 yr']]},
+microtek:{name:'Microtek',cat:'Inverters',origin:'Pune, India',price:'Rs. 28,000 - 35,000 per kW',
+ desc:"Possibly the most trusted inverter name in Telangana households - the same company families have used for home UPS for years. Simple, tough on-grid MPPT inverters, go-to solar PCUs for battery homes, and service centres everywhere.",
+ pair:'The classic Telangana combo: Waaree or Emmvee panels + Microtek inverter. We stock spares locally for fast service. Popular in Hyderabad, Karimnagar, Nalgonda and Khammam.',
+ rows:[['Microtek MSUN 1 kW','1 kW','On-grid, MPPT, Wi-Fi ready','Up to 5 yr'],['Microtek MSUN 3/5 kW','3-5 kW','On-grid, dual MPPT','Up to 5 yr'],['Microtek Solar PCU 1035/2035','1-2 kVA','Off-grid with battery','2 yr'],['Microtek Hybrid PCU','5 kVA','Grid + battery hybrid','2 yr']]},
+luminous:{name:'Luminous',cat:'Inverters',origin:'Gurugram, India',price:'Rs. 26,000 - 34,000 per kW',
+ desc:"India's biggest home-power brand with arguably the widest service network in the country. The NXG solar PCU is the first choice for homes that want battery backup at a sensible price; the Nxi series handles grid-tie cleanly.",
+ pair:'Pairs with any 545 Wp panel we install. Best for homes wanting backup first, bill savings second. Popular in Secunderabad, Warangal, Tirupati and Eluru.',
+ rows:[['Luminous Nxi 310','1-5 kW','On-grid grid-tie','5 yr'],['Luminous NXG 1400','~1.1 kVA','Solar PCU, battery','2 yr'],['Luminous NXG Plus 1850','~1.5 kVA','Solar PCU, battery','2 yr']]},
+growatt:{name:'Growatt',cat:'Inverters',origin:'Global top-5 inverter maker',price:'Rs. 30,000 - 38,000 per kW',
+ desc:"A world top-5 inverter brand with a strong India base. Excellent MPPT efficiency, a genuinely good monitoring app, and sleek lightweight units. Our preferred choice for larger net-metering homes and shops.",
+ pair:'Preferred pairing with Adani and Waaree panels for 3-10 kW net-metering systems. Popular in Hyderabad (villas and shops), Vijayawada and Nellore.',
+ rows:[['Growatt MIC 750-3300 TL-X','1-3 kW','On-grid, 2 MPPT, Wi-Fi','Up to 10 yr'],['Growatt MIN 2500-6000 TL-X','3-6 kW','On-grid, dual MPPT','Up to 10 yr'],['Growatt MOD/MAX 3P','10 kW+','3-phase commercial','Up to 10 yr']]},
+solis:{name:'Solis',cat:'Inverters',origin:'Global - strong India presence',price:'Rs. 29,000 - 36,000 per kW',
+ desc:"Specialist grid-tie inverter maker with a 10-year standard warranty in India and MPPT efficiency that holds up in real Telangana summers. A workhorse for apartments, clinics and small industry across both states.",
+ pair:'Our go-to for 5-25 kW three-phase jobs - apartments and commercial roofs in AP and Telangana. Popular in Hyderabad apartments, Guntur and Rajahmundry.',
+ rows:[['Solis S6 1P 2-6 kW','2-6 kW','Single-phase on-grid','10 yr'],['Solis 3P 5-20 kW','5-20 kW','Three-phase on-grid','10 yr'],['Solis S6 Hybrid','3-6 kW','Hybrid with battery','10 yr']]},
+others:{name:'Also Available (Tata, Vikram, Sungrow, Havells)',cat:'On order',origin:'Various - all ALMM approved',price:'Quoted on request',
+ desc:"Beyond regular stock we arrange Tata Power Solar and Vikram Solar panels (premium Indian brands), Sungrow inverters (excellent for bigger commercial plants) and Havells solar solutions - quoted honestly with full warranty support.",
+ pair:'Tell us your preferred brand - we pair it with the right inverter and confirm ALMM listing for subsidy. Available across all served districts of Telangana and AP.',
+ rows:[['Tata Power Solar 540-560','540+ Wp','Mono PERC Half-Cut','12 yr / 30 yr'],['Vikram Solar Somera 545','545 Wp','Mono PERC Half-Cut','12 yr / 30 yr'],['Sungrow SG 3-10 KT','3-10 kW','On-grid inverter','10 yr']]}
+};
+
+/* ============ 5. DOWNLOAD HELPERS ============ */
+function clickAnchor(href, fname){
+  var a = document.createElement('a');
+  a.href = href;
+  if(fname) a.setAttribute('download', fname);
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function(){ if(a.parentNode) a.parentNode.removeChild(a); }, 1500);
+}
+function downloadPDF(bytes, fname){
+  try{
+    var blob = new Blob([bytes], {type:'application/pdf'});
+    var U = window.URL || window.webkitURL;
+    if(U && U.createObjectURL){
+      var url = U.createObjectURL(blob);
+      clickAnchor(url, fname);
+      setTimeout(function(){ try{ U.revokeObjectURL(url); }catch(e){} }, 180000);
+      return url;
+    }
+  }catch(e){}
+  try{
+    var durl = 'data:application/pdf;base64,' + btoa(bytes);
+    clickAnchor(durl, fname);
+    return durl;
+  }catch(e){}
+  try{
+    if(window.navigator && window.navigator.msSaveOrOpenBlob){
+      window.navigator.msSaveOrOpenBlob(new Blob([bytes],{type:'application/pdf'}), fname);
+      return 'ms';
+    }
+  }catch(e){}
+  return null;
+}
+
+/* ============ 6. BUILT-IN PDF WRITER ============ */
+function makePDF(key){
+  try{
+    var b = BRANDS[key]; if(!b){ toast('Brand data not found','alert'); return; }
+    var W=595, H=842, ops=[];
+    function Y(y){ return H - y; }
+    function fill(x,y,w,h,c){ ops.push(c[0]+' '+c[1]+' '+c[2]+' rg '+x+' '+Y(y+h)+' '+w+' '+h+' re f'); }
+    function txt(s,x,y,size,bold,c){ ops.push('BT '+c[0]+' '+c[1]+' '+c[2]+' rg /'+(bold?'F2':'F1')+' '+size+' Tf 1 0 0 1 '+x+' '+Y(y)+' Tm ('+pdfEsc(ascii(s))+') Tj ET'); }
+    function ln(x1,y1,x2,y2,w,c){ ops.push(c[0]+' '+c[1]+' '+c[2]+' RG '+w+' w '+x1+' '+Y(y1)+' m '+x2+' '+Y(y2)+' l S'); }
+    function circle(cx,cy,r,c){
+      var k=0.5523*r, yc=Y(cy);
+      ops.push(c[0]+' '+c[1]+' '+c[2]+' rg '+
+        (cx-r)+' '+yc+' m '+
+        (cx-r)+' '+(yc+k)+' '+(cx-k)+' '+(yc+r)+' '+cx+' '+(yc+r)+' c '+
+        (cx+k)+' '+(yc+r)+' '+(cx+r)+' '+(yc+k)+' '+(cx+r)+' '+yc+' c '+
+        (cx+r)+' '+(yc-k)+' '+(cx+k)+' '+(yc-r)+' '+cx+' '+(yc-r)+' c '+
+        (cx-k)+' '+(yc-r)+' '+(cx-r)+' '+(yc-k)+' '+(cx-r)+' '+yc+' c f');
+    }
+    var INK=[0.08,0.15,0.11], GREEN=[0.11,0.42,0.25], AMBER=[0.94,0.66,0.24],
+        PAPER=[0.96,0.95,0.91], GREY=[0.42,0.51,0.45], LINE=[0.82,0.8,0.74], WHITE=[1,1,1];
+
+    fill(0,0,W,92,GREEN); circle(56,46,17,AMBER);
+    txt('GAYATRI GREEN ENERGY',88,36,16,true,WHITE);
+    txt('Rooftop Solar  |  Hyderabad, Telangana & Andhra Pradesh  |  +91 99120 58832',88,56,9,false,[0.92,0.95,0.92]);
+    txt('Shop No. 303, Comfort Homes 1, Kaithalapur, Hyderabad - 500018',88,70,8,false,[0.84,0.89,0.85]);
+
+    txt(b.name+' - Product & Spec Sheet',40,124,19,true,INK);
+    txt('Category: '+b.cat+'   |   Origin: '+b.origin,40,148,9.5,false,GREY);
+    txt('Indicative price band: '+b.price,40,163,9.5,false,GREY);
+
+    var y=190;
+    txt('About the brand',40,y,11,true,GREEN); y+=16;
+    wrapText(b.desc,9.5,515).forEach(function(l){ txt(l,40,y,9.5,false,INK); y+=13; });
+    y+=12;
+
+    var cols=[195,70,150,100], x0=40, rowH=22, tableTop=y;
+    fill(x0,y,515,rowH,INK);
+    var cx=x0+8;
+    ['Model','Size','Type','Warranty'].forEach(function(h,i){ txt(h,cx,y+15,9,true,PAPER); cx+=cols[i]; });
+    y+=rowH;
+    b.rows.forEach(function(r,ri){
+      if(ri%2===1) fill(x0,y,515,rowH,PAPER);
+      var xx=x0+8;
+      for(var j=0;j<4;j++){ txt(String(r[j]),xx,y+15,9,j===0,INK); xx+=cols[j]; }
+      ln(x0,y+rowH,x0+515,y+rowH,0.5,LINE);
+      y+=rowH;
+    });
+    ln(x0,tableTop,x0,y,0.7,INK); ln(x0+515,tableTop,x0+515,y,0.7,INK);
+    ln(x0,tableTop,x0+515,tableTop,0.7,INK); ln(x0,y,x0+515,y,0.7,INK);
+
+    y+=18;
+    txt('Recommended pairing at Gayatri Green Energy:',40,y,10.5,true,GREEN); y+=15;
+    wrapText(b.pair,9.5,515).forEach(function(l){ txt(l,40,y,9.5,false,INK); y+=13; });
+    y+=14;
+
+    txt('How to reach us',40,y,11,true,GREEN); y+=15;
+    txt('Phone / WhatsApp: +91 99120 58832   (Mon - Sat, 9:30 AM - 7:30 PM)',40,y,9.5,false,INK); y+=13;
+    txt('Visit: Shop No. 303, Comfort Homes 1, Kaithalapur, Hyderabad - 500018',40,y,9.5,false,INK); y+=13;
+    txt('We serve all major districts of Telangana and Andhra Pradesh.',40,y,9.5,false,INK); y+=18;
+    txt('PM Surya Ghar subsidy up to Rs. 78,000 for homes - we file the application for you, free.',40,y,9.5,true,GREEN);
+
+    ln(40,H-56,W-40,H-56,0.7,INK);
+    txt('Generated '+new Date().toLocaleDateString('en-IN')+"  |  Prices are indicative - call +91 99120 58832 for today's price.",40,H-40,8,false,GREY);
+    txt('This sheet was prepared by Gayatri Green Energy - rooftop solar specialists for Telangana & AP.',40,H-26,8,false,GREY);
+
+    var content=ops.join('\n');
+    var objs=[];
+    objs[1]='<< /Type /Catalog /Pages 2 0 R >>';
+    objs[2]='<< /Type /Pages /Kids [3 0 R] /Count 1 >>';
+    objs[3]='<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>';
+    objs[4]='<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>';
+    objs[5]='<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>';
+    objs[6]='<< /Length '+content.length+' >>\nstream\n'+content+'\nendstream';
+    var out='%PDF-1.4\n', offs=[];
+    for(var n=1;n<=6;n++){ offs[n]=out.length; out+=n+' 0 obj\n'+objs[n]+'\nendobj\n'; }
+    var xref=out.length;
+    out+='xref\n0 7\n0000000000 65535 f \n';
+    for(n=1;n<=6;n++){ out+=('0000000000'+offs[n]).slice(-10)+' 00000 n \n'; }
+    out+='trailer\n<< /Size 7 /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+
+    var fname=b.name.replace(/[^A-Za-z]+/g,'')+'-SpecSheet-GayatriGreenEnergy.pdf';
+    var url=downloadPDF(out,fname);
+    if(url && url !== 'ms'){
+      toast(b.name.split('(')[0].trim()+' PDF is downloading','check',' <a href="'+url+'" target="_blank" rel="noopener">Open / save here</a>');
+    } else if(url === 'ms'){
+      toast(b.name.split('(')[0].trim()+' PDF downloaded','check');
+    } else {
+      toast('Automatic download blocked - tap the button again or WhatsApp us at 99120 58832','alert');
+    }
+  }catch(e){
+    toast('Download failed - please call 99120 58832 for the sheet','alert');
+  }
+}
+function pdfEsc(s){ return String(s).replace(/\\/g,'\\\\').replace(/\(/g,'\\(').replace(/\)/g,'\\)'); }
+function ascii(s){ return String(s).replace(/\u20B9/g,'Rs.').replace(/[\u2013\u2014]/g,'-').replace(/[\u2018\u2019]/g,"'").replace(/[\u201C\u201D]/g,'"').replace(/\u2082/g,'2').replace(/[^\x20-\x7E]/g,''); }
+function wrapText(s,size,maxW){
+  var maxChars=Math.floor(maxW/(size*0.5));
+  var words=String(s).split(' '), lines=[], cur='';
+  for(var i=0;i<words.length;i++){
+    var t=cur?cur+' '+words[i]:words[i];
+    if(t.length>maxChars){
+      if(cur){ lines.push(cur); cur=words[i]; }
+      while(cur.length>maxChars){ lines.push(cur.slice(0,maxChars)); cur=cur.slice(maxChars); }
+    } else cur=t;
+  }
+  if(cur) lines.push(cur);
+  return lines;
+}
+
+/* ============ 7. SYSTEM-TYPE TABS ============ */
+safe(function(){
+  $$('.tab').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      $$('.tab').forEach(function(t){ t.classList.remove('active'); });
+      $$('.type-panel').forEach(function(p){ p.classList.remove('show'); });
+      tab.classList.add('active');
+      var p=$('#tp-'+tab.getAttribute('data-tab')); if(p) p.classList.add('show');
+    });
+  });
+});
+
+/* ============ 8. NAV — LOCKED, NEVER HIDES ============ */
+var nav=$('#nav'), prog=$('#navProg'), lastY=0, mnavOpen=false;
+function onScroll(){
+  var y=window.pageYOffset||document.documentElement.scrollTop;
+  if(nav){
+    nav.classList.toggle('float', y>70);
+    nav.classList.remove('hidden');
+  }
+  lastY=y;
+  if(prog){
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(max>0?(y/max)*100:0)+'%';
+  }
+  timelineProgress();
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+
+/* scroll-spy */
+safe(function(){
+  var spy=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        $$('#deskLinks a').forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('href')==='#'+en.target.id);
+        });
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  ['about','services','systems','brands','process','faq','contact'].forEach(function(id){
+    var s=document.getElementById(id); if(s) spy.observe(s);
+  });
+});
+
+/* mobile menu */
+var mnav=$('#mnav');
+safe(function(){
+  function setMenu(open){
+    mnavOpen=open;
+    if(!mnav) return;
+    mnav.classList.toggle('open',open);
+    mnav.setAttribute('aria-hidden',String(!open));
+    document.body.style.overflow=open?'hidden':'';
+    if(open && nav) nav.classList.remove('hidden');
+  }
+  var b=$('#burger'); if(b) b.addEventListener('click',function(){ setMenu(true); });
+  var c=$('#mclose'); if(c) c.addEventListener('click',function(){ setMenu(false); });
+  $$('#mnav a').forEach(function(a){ a.addEventListener('click',function(){ setMenu(false); }); });
+});
+
+/* ============ 9. REVEALS + COUNTERS ============ */
+safe(function(){
+  var rvObs=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); rvObs.unobserve(en.target); } });
+  },{threshold:.12});
+  $$('.rv').forEach(function(el){ rvObs.observe(el); });
+});
+safe(function(){
+  var cObs=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      cObs.unobserve(en.target);
+      var el=en.target, target=parseFloat(el.getAttribute('data-count')), dec=parseInt(el.getAttribute('data-dec')||'0',10);
+      var t0=performance.now(), dur=1400;
+      function tick(t){
+        var p=Math.min((t-t0)/dur,1), e=1-Math.pow(1-p,3);
+        el.textContent=(target*e).toFixed(dec);
+        if(p<1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  },{threshold:.6});
+  $$('[data-count]').forEach(function(el){ cObs.observe(el); });
+});
+
+/* ============ 10. LIVE SUN CLOCK ============ */
+safe(function(){
+  var dot=$('#sunDot'), arcFill=$('#arcFill'), genNow=$('#genNow'), genToday=$('#genToday'), clockTime=$('#clockTime');
+  if(!dot) return;
+  var P0x=20,P0y=92,Cx=160,Cy=-18,P2x=300,P2y=92;
+  function bez(t){ var u=1-t; return [u*u*P0x+2*u*t*Cx+t*t*P2x, u*u*P0y+2*u*t*Cy+t*t*P2y]; }
+  function updateSun(){
+    var now=new Date();
+    var ist=new Date(now.getTime()+(330+now.getTimezoneOffset())*60000);
+    var h=ist.getHours()+ist.getMinutes()/60;
+    var hh=ist.getHours(), mm=ist.getMinutes(), ap=hh>=12?'PM':'AM', h12=hh%12; if(h12===0)h12=12;
+    clockTime.textContent=(h12<10?'0'+h12:h12)+':'+(mm<10?'0'+mm:mm)+' '+ap;
+    var sr=6.25, ss=18.5, t=Math.min(Math.max((h-sr)/(ss-sr),0),1);
+    var pt=bez(t), day=h>=sr&&h<=ss;
+    dot.setAttribute('cx',pt[0]); dot.setAttribute('cy',pt[1]);
+    dot.style.display=day?'':'none';
+    arcFill.setAttribute('stroke-dasharray',(t*100).toFixed(1)+' 100');
+    var peak=2.7;
+    genNow.textContent=(day?peak*Math.sin(Math.PI*t):0).toFixed(2)+' kW';
+    var wh=0, steps=240, nowT=day?t:(h>ss?1:0);
+    for(var i=0;i<=steps*nowT;i++){ var tt=i/steps; wh+=peak*Math.sin(Math.PI*tt)*((ss-sr)*3600/steps)/1000; }
+    genToday.textContent=wh.toFixed(1)+' units';
+  }
+  updateSun(); setInterval(updateSun,30000);
+});
+
+/* ticker loop */
+safe(function(){
+  var track=$('#tickerTrack'); if(track) track.innerHTML+=track.innerHTML;
+});
+
+/* ============ 11. TIMELINE PROGRESS ============ */
+var tlEl=$('#timeline'), tlFill=$('#tlFill');
+function timelineProgress(){
+  if(!tlEl||!tlFill) return;
+  var r=tlEl.getBoundingClientRect();
+  var p=Math.min(Math.max((window.innerHeight*0.62-r.top)/r.height,0),1);
+  tlFill.style.height=(p*100)+'%';
+  $$('.tl-step',tlEl).forEach(function(s){
+    s.classList.toggle('done', s.offsetTop+20<=p*r.height);
+  });
+}
+
+/* ============ 12. SAVINGS CALCULATOR ============ */
+safe(function(){
+  var slider=$('#billSlider'); if(!slider) return;
+  function inr(n){ return '\u20B9'+Math.round(n).toLocaleString('en-IN'); }
+  function calc(){
+    var bill=+slider.value;
+    $('#billOut').textContent=inr(bill);
+    var kW=Math.min(Math.max(Math.round(bill/1000),1),10);
+    var subsidy=kW===1?30000:(kW===2?60000:78000);
+    var cost=kW<=2?kW*65000:(kW<=5?kW*60000:kW*55000);
+    var net=cost-subsidy;
+    var saveMo=Math.min(bill*0.9,kW*1100);
+    var payback=(net/(saveMo*12)).toFixed(1);
+    $('#rSize').textContent=kW+' kW';
+    $('#rSave').textContent=inr(saveMo);
+    $('#rCost').textContent=net>=100000?'\u20B9'+(net/100000).toFixed(1)+' L':inr(net);
+    $('#rPay').textContent=payback+' yrs';
+    var roof=kW*90, co2=(kW*1.2).toFixed(1);
+    $('#rRoof').textContent='~'+roof+' sq.ft';
+    $('#rExtra').innerHTML='A '+kW+' kW system needs about <b>'+roof+' sq.ft</b> of shadow-free roof, earns a subsidy of <b>'+inr(subsidy)+'</b>, and offsets <b>~'+co2+' tonnes of CO\u2082 every year</b>.';
+    return {bill:bill,kW:kW,net:net,payback:payback};
+  }
+  slider.addEventListener('input',calc); calc();
+  var qw=$('#quoteWa');
+  if(qw) qw.addEventListener('click',function(){
+    var c=calc();
+    var msg='Hi Gayatri Green Energy! My monthly current bill is about '+inr(c.bill)+
+      '. Your calculator suggests a '+c.kW+' kW system (approx '+inr(c.net)+' after subsidy, ~'+c.payback+' yr payback). Please share an exact quote for my roof.';
+    window.open('https://wa.me/919912058832?text='+encodeURIComponent(msg),'_blank');
+    toast('Opening WhatsApp with your estimate','message-circle');
+  });
+});
+
+/* ============ 13. CONTACT FORM ============ */
+safe(function(){
+  var form=$('#quoteForm'); if(!form) return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=$('#qName').value.trim();
+    var phone=$('#qPhone').value.replace(/\D/g,'');
+    $('#fName').classList.toggle('err',!name);
+    $('#fPhone').classList.toggle('err',phone.length!==10);
+    if(!name||phone.length!==10){ toast('Please add your name and a 10-digit phone number','alert'); return; }
+    var city=$('#qCity').value.trim()||'-';
+    var bill=$('#qBill').value;
+    var msg=$('#qMsg').value.trim();
+    var text='Hi Gayatri Green Energy! I want a free solar quote.\n\nName: '+name+'\nPhone: '+phone+
+      '\nPlace: '+city+'\nMonthly bill: '+bill+(msg?'\nNote: '+msg:'')+'\n\nPlease contact me.';
+    window.open('https://wa.me/919912058832?text='+encodeURIComponent(text),'_blank');
+    toast('Thanks '+name.split(' ')[0]+'! Opening WhatsApp','check');
+    form.reset();
+  });
+});
+
+/* year */
+safe(function(){ var y=$('#year'); if(y) y.textContent=new Date().getFullYear(); });
+
+onScroll();
+})();
+</script>
+</body>
+</html>
